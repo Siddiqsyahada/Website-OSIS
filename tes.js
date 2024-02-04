@@ -1,10 +1,9 @@
-function grow(x){
-    let result = x[0]
-    for(let i = 1; i < x.length; i ++){
-      result = result * x[i]
-    }
+const reverseSeq = n => {
+  let hasil = []
+  for(let angka = n;angka >= 1;angka--){
+    hasil.push(angka)
+  }
+  return hasil;
+};
 
-  return result
-}
-
-console.log(grow([4, 1, 1, 1, 4]))
+reverseSeq(7)
