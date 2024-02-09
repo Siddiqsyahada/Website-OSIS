@@ -453,3 +453,30 @@ function ubahKelas(selectedValue) {
   const form = document.querySelector("form");
   form.appendChild(hiddenInput);
 }
+
+document.getElementById("btnKirim").addEventListener("click", function() {
+  var kelas = document.getElementById("kelas").value;
+  var pesan = document.getElementById("KritikanDanPesan").value;
+
+  var data = {
+    kelas: kelas,
+    pesan: pesan
+  };
+
+  fetch('https://script.google.com/macros/s/AKfycbzWcCPQEx80wJNDNaeADOUzFU_639-https://script.google.com/macros/s/AKfycbwMKNn9rBnrJHu3EKDxa2luK8wB__uaVV5_Mt4S6Rzi7jIRLRc2MOmAsYkHfbf-qEw/exec', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Data terkirim:', data);
+    alert(data)
+    // Tambahkan logika atau respons lain di sini
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+});

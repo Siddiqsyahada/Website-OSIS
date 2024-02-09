@@ -221,7 +221,7 @@
                   <h3><a href="#" class="mb-2 block text-center text-sm md:text-lg font-semibold text-dark hover:text-primary dark:text-white">Keimanan Dan Ketakwaan Terhadap Tuhan Yang Maha Esa</a></h3>
                   <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempore eos velit corrupti reprehenderit ducimus architecto harum nam quod totam.</p>
                   <div class="w-full justify-center flex">
-                    <a href="#" class="rounded-lg  bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
+                    <a href="./sekbid/sekbid1.html" class="rounded-lg  bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
                   </div>
                 </div>
               </div>
@@ -296,26 +296,24 @@
           </div>
         </div>
 
-        <form action="https://script.google.com/macros/s/AKfycbwa9VopdZl9OPfncO8NPknmaBRJPjyEAmbUobzoF7gpQZfjmWCJqQA2NPlvo8mArsI/exec" method="POST">
-          <div class="w-full lg:mx-auto lg:w-2/3">
-            <div class="mb-8 w-full px-4">
-              <label for="kelas" class="text-base font-bold text-primary">Kelas</label>
-              <select onchange="ubahKelas(this.value)" class="block bg-slate-200 w-full px-4 py-2 mb-4 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
-                <option value="default">Pilih Kelas</option>
-                <option value="10">Kelas 10</option>
-                <option value="11">Kelas 11</option>
-                <option value="12">Kelas 12</option>
-              </select>
-            </div>
-            <div class="mb-8 w-full px-4">
-              <label for="KritikanDanPesan" class="text-base font-bold text-primary">Pesan</label>
-              <textarea name="KritikanDanPesan" id="KritikanDanPesan" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" required></textarea>
-            </div>
-            <div class="w-full px-4">
-              <button class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">Kirim</button>
-            </div>
+        <div class="w-full lg:mx-auto lg:w-2/3">
+          <div class="mb-8 w-full px-4">
+            <label for="kelas" class="text-base font-bold text-primary">Kelas</label>
+            <select id="kelas" class="block bg-slate-200 w-full px-4 py-2 mb-4 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+              <option value="default">Pilih Kelas</option>
+              <option value="10">Kelas 10</option>
+              <option value="11">Kelas 11</option>
+              <option value="12">Kelas 12</option>
+            </select>
           </div>
-        </form>
+          <div class="mb-8 w-full px-4">
+            <label for="KritikanDanPesan" class="text-base font-bold text-primary">Pesan</label>
+            <textarea id="KritikanDanPesan" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" required></textarea>
+          </div>
+          <div class="w-full px-4">
+            <button id="btnKirim" class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">Kirim</button>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Contact Section End -->
