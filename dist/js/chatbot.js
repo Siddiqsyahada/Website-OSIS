@@ -150,10 +150,16 @@ async function processUserMessage(message) {
         body: JSON.stringify({
           target: DataNomorHP[messageArray[1]],
           message: `
-haii ada pesan nihh dari seserorang:
-${pesan}
+          Halo, ${messageArray[1]}!
+
+          Aku punya kabar seru untukmu:
           
-Pesan ini datang dari seseorang yang mengirimkan pesan untukmu melalui vero pada website OSIS/MPK SMA Kartika 1-5 Padang`
+          "${pesan}"
+          
+          Dari mana asal pesan ini? Kamu pasti penasaran! Nah, seseorang telah mengirimkan pesan khusus untukmu melalui Vero di website OSIS/MPK SMA Kartika 1-5 Padang.
+          
+          Bukalah segera pesannya dan biarkan aku tahu bagaimana reaksimu! Pesan ini mungkin membawa kabar baik atau sekadar ingin mengirimkan semangat untukmu. Semoga harimu semakin cerah dengan pesan ini!
+          `
         })
       };
     

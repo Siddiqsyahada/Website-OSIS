@@ -454,29 +454,208 @@ function ubahKelas(selectedValue) {
   form.appendChild(hiddenInput);
 }
 
-document.getElementById("btnKirim").addEventListener("click", function() {
+document.getElementById("btnKirim").addEventListener("click", async function() {
+  // Menampilkan efek loading
+  document.getElementById("loading").classList.remove("hidden");
+
   var kelas = document.getElementById("kelas").value;
   var pesan = document.getElementById("KritikanDanPesan").value;
+  var waktuSekarang = new Date();
 
-  var data = {
-    kelas: kelas,
-    pesan: pesan
+  var tanggal = waktuSekarang.getDate();
+  var bulan = waktuSekarang.getMonth() + 1; // Perlu ditambah 1 karena bulan dimulai dari 0 (Januari)
+  var tahun = waktuSekarang.getFullYear();
+  var jam = waktuSekarang.getHours();
+  var menit = waktuSekarang.getMinutes();
+  var detik = waktuSekarang.getSeconds();
+
+  // Memformat ke dalam string dengan format yang diinginkan
+  var timestamp = tanggal + '/' + bulan + '/' + tahun + ' ' + jam + ':' + menit + ':' + detik;
+
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    mode: "no-cors",
+    body: JSON.stringify({ "timestamp": timestamp, "kelas": kelas, "pesan": pesan })
   };
 
-  fetch('https://script.google.com/macros/s/AKfycbzWcCPQEx80wJNDNaeADOUzFU_639-https://script.google.com/macros/s/AKfycbwMKNn9rBnrJHu3EKDxa2luK8wB__uaVV5_Mt4S6Rzi7jIRLRc2MOmAsYkHfbf-qEw/exec', {
+  try {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbxtZcco1ry8lPpBNkN_1KYiK9xKArEiqKn5repF1uAOAdkjqgPoWaW_4Enf8oI-UmYH/exec', options);
+    const data = await response.json();
+    console.log('Data Pesan terbaru:', data);
+  } catch (error) {
+    console.error('Error:', error);
+    // Menyembunyikan efek loading jika terjadi kesalahan
+    document.getElementById("loading").classList.add("hidden");
+  }
+  document.getElementById("loading").classList.add("hidden");
+  document.getElementById("KritikanDanPesan").value = "";
+  document.getElementById("kelas").value = "Default";
+
+  swal("Succes", "Pesan Anda Berhasil Terkirim.Terimakasih Telah Memberikan Masukan :)", "success");
+});
+
+
+function tambahKomentar(nama, tanggal, komentar) {
+  var daftarKomentar = document.getElementById("daftarKomentar");
+  var artikelKomentar = document.createElement("article");
+  artikelKomentar.classList.add("p-6", "text-base", "bg-white", "rounded-lg", "dark:bg-gray-900", "border-t", "border-gray-200", "dark:border-gray-700", "mb-3");
+
+  var footer = document.createElement("footer");
+  footer.classList.add("flex", "justify-between", "items-center", "mb-2");
+
+  var divInfo = document.createElement("div");
+  divInfo.classList.add("flex", "items-center");
+
+  var imgProfil = document.createElement("img");
+  imgProfil.classList.add("mr-2", "w-6", "h-6", "rounded-full");
+  imgProfil.setAttribute("src", "https://img.icons8.com/fluency/96/user-male-circle--v1.png");
+  imgProfil.setAttribute("alt", nama);
+
+  var pNama = document.createElement("p");
+  pNama.classList.add("inline-flex", "items-center", "mr-3", "text-sm", "text-gray-900", "dark:text-white", "font-semibold");
+  pNama.textContent = nama;
+
+  var pTanggal = document.createElement("p");
+  pTanggal.classList.add("text-sm", "text-gray-600", "dark:text-gray-400");
+  pTanggal.innerHTML = `<time pubdate datetime="${tanggal}">${tanggal}</time>`;
+
+  divInfo.appendChild(imgProfil);
+  divInfo.appendChild(pNama);
+  divInfo.appendChild(pTanggal);
+
+  // Dropdown button (tanpa ikon Reply)
+  var dropdownButton = document.createElement("button");
+  dropdownButton.setAttribute("id", "dropdownCommentButton" + Math.floor(Math.random() * 1000)); // Untuk id unik
+  dropdownButton.setAttribute("data-dropdown-toggle", "dropdownComment" + Math.floor(Math.random() * 1000)); // Untuk id unik
+  dropdownButton.classList.add("inline-flex", "items-center", "p-2", "text-sm", "font-medium", "text-center", "text-gray-500", "dark:text-gray-400", "bg-white", "rounded-lg", "hover:bg-gray-100", "focus:ring-4", "focus:outline-none", "focus:ring-gray-50", "dark:bg-gray-900", "dark:hover:bg-gray-700", "dark:focus:ring-gray-600");
+  dropdownButton.setAttribute("type", "button");
+
+  // Dropdown menu (tanpa ikon Reply)
+  var dropdownMenu = document.createElement("div");
+  dropdownMenu.setAttribute("id", "dropdownComment" + Math.floor(Math.random() * 1000)); // Untuk id unik
+  dropdownMenu.classList.add("hidden", "z-10", "w-36", "bg-white", "rounded", "divide-y", "divide-gray-100", "shadow", "dark:bg-gray-700", "dark:divide-gray-600");
+
+  var ulDropdown = document.createElement("ul");
+  ulDropdown.classList.add("py-1", "text-sm", "text-gray-700", "dark:text-gray-200");
+
+  var liEdit = document.createElement("li");
+  var aEdit = document.createElement("a");
+  aEdit.setAttribute("href", "#");
+  aEdit.classList.add("block", "py-2", "px-4", "hover:bg-gray-100", "dark:hover:bg-gray-600", "dark:hover:text-white");
+  aEdit.textContent = "Edit";
+  liEdit.appendChild(aEdit);
+
+  var liRemove = document.createElement("li");
+  var aRemove = document.createElement("a");
+  aRemove.setAttribute("href", "#");
+  aRemove.classList.add("block", "py-2", "px-4", "hover:bg-gray-100", "dark:hover:bg-gray-600", "dark:hover:text-white");
+  aRemove.textContent = "Remove";
+  liRemove.appendChild(aRemove);
+
+  var liReport = document.createElement("li");
+  var aReport = document.createElement("a");
+  aReport.setAttribute("href", "#");
+  aReport.classList.add("block", "py-2", "px-4", "hover:bg-gray-100", "dark:hover:bg-gray-600", "dark:hover:text-white");
+  aReport.textContent = "Report";
+  liReport.appendChild(aReport);
+
+  ulDropdown.appendChild(liEdit);
+  ulDropdown.appendChild(liRemove);
+  ulDropdown.appendChild(liReport);
+
+  dropdownMenu.appendChild(ulDropdown);
+
+  footer.appendChild(divInfo);
+  footer.appendChild(dropdownButton);
+  footer.appendChild(dropdownMenu);
+
+  var pKomentar = document.createElement("p");
+  pKomentar.classList.add("text-gray-500", "dark:text-gray-400");
+  pKomentar.textContent = komentar;
+
+  var divAction = document.createElement("div");
+  divAction.classList.add("flex", "items-center", "mt-4", "space-x-4");
+
+  // var btnReply = document.createElement("button");
+  // btnReply.setAttribute("type", "button");
+  // btnReply.classList.add("flex", "items-center", "text-sm", "text-gray-500", "hover:underline", "dark:text-gray-400", "font-medium");
+  // btnReply.textContent = "Balas";
+
+  // divAction.appendChild(btnReply);
+
+  artikelKomentar.appendChild(footer);
+  artikelKomentar.appendChild(pKomentar);
+  artikelKomentar.appendChild(divAction);
+
+  daftarKomentar.appendChild(artikelKomentar);
+}
+
+document.getElementById("formKomentar").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  var komentar = document.getElementById("comment").value;
+  var nama = document.getElementById("nama").value
+  var sekarang = new Date();
+  var waktu = sekarang.getHours() + ':' + sekarang.getMinutes();
+  var tanggal = sekarang.getDate() + '/' + (sekarang.getMonth() + 1);
+  var waktuDanTanggal = waktu + ' ' + tanggal;
+  // Tambahkan komentar ke dalam daftar komentar
+  fetch('https://script.google.com/macros/s/AKfycbyo3zbwv6I6LzlFljb6gw6btvh_AK1Q88xaNXzpmMoFU3Xaa1akNW7NCmKhM9ccY2A/exec', {
+    redirect: "follow",
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json'
+      "Content-Type": "text/plain;charset=utf-8",
     },
-    body: JSON.stringify(data)
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log('Data terkirim:', data);
-    alert(data)
-    // Tambahkan logika atau respons lain di sini
+    mode:"no-cors",
+    body: JSON.stringify({ "timestamp":waktuDanTanggal, "nama": nama, "komentar": komentar })
+  }).then(response => response.json()).then(data => {
+    console.log('Data komentar terbaru:', data);
+    swal("Succes", "Komentar Anda Berhasil Ditambahkan", "success");
+    tambahKomentar(nama, tanggal, komentar);
   })
   .catch(error => {
     console.error('Error:', error);
+    swal("Succes", "Komentar Anda Berhasil Ditambahkan", "success");
+    tambahKomentar(nama, tanggal, komentar);
+    let jumlahComment = document.getElementById('jumlahComment').textContent;
+    jumlahComment = parseInt(jumlahComment) + 1;
+    jumlahComment = jumlahComment.toString();
+    document.getElementById("jumlahComment").textContent = jumlahComment
+
   });
+  
+  // Reset nilai input komentar
+  document.getElementById("comment").value = "";
+  document.getElementById('nama').value = ""
 });
+
+fetch('https://script.google.com/macros/s/AKfycbyo3zbwv6I6LzlFljb6gw6btvh_AK1Q88xaNXzpmMoFU3Xaa1akNW7NCmKhM9ccY2A/exec', {
+  redirect: "follow",
+  method: 'GET',
+  headers: {
+    "Content-Type": "text/plain;charset=utf-8",
+  },
+})
+.then(response => response.json())
+.then(data => {
+
+  if (data.length > 20) {
+    for (let i = data.length - 1; i >= data.length - 20; i--) {
+      tambahKomentar(data[i].Nama, data[i].Timestamp, data[i].Komentar);
+    }
+  }
+  else {
+    for (let i = data.length - 1; i >= 0; i--) {
+      tambahKomentar(data[i].Nama, data[i].Timestamp, data[i].Komentar);
+    }
+  }
+
+  document.getElementById('jumlahComment').textContent = data.length
+})
+.catch(error => {
+  console.error('Error:', error);
+});
+
