@@ -2,7 +2,7 @@ export function panggilGenerateBiodataDariNama(nama){
   const biodataMap = {
     "AdriyansyahNugraha" : ["Adriyansyah Nugraha", "Adri", "xe5", "Sekbid 7", "Padang/24 Januari 2008", "pengusaha", "gurun laweh nanxx", "adrynsnn", "62895618785787"],
     "Alfadhli" : ["Alfadhli", "Fadhli", "XE9", "Komisi B", "Padang/19 Februari 2008", "Polisi", "Tanjung aua nan xx", "alfadhli_02", "6282391145456"],
-    "AntarunAsadyLuthfi": ["Antarun Asady Luthfi", "Luthfi", "Xl mipa 4", "Ketua Osis", "Padang/11 Mei 2006", "AAL", "Pengambiran, jln, berlian raya no 8", "Antarun_Luthfi", "6281371792144"],
+    "AntarunAsadyLuthfi": ["Antarun Asady Luthfi", "Luthfi", "Xl mipa 4", "Ketua Osis", "Padang/11 Mei 2006", "AAL", "Pengambiran, jln, berlian raya no 8", "Anntrun_Luth", "6281371792144"],
     "ArgaAvrinaldi": ["Arga Avrinaldi", "Arga", "XE9", "Sekbid 3", "Padang/13 April 2008", "TNI/POLISI", "Kampung jua.tarantang kaki pendakian RT01 RW02", "Argavrinaldi", "6282173241784"],
     "ArthaulZikra": ["Arthaul Zikra", "Zikra", "XE10", "Sekbid 7", "Padang/05 April 2008", "Pengusaha", "Simp watas pisang no 33", "Zikzik08", "6281371857590"],
     "AzdraAqqilah": ["Azdra Aqqilah", "Azdra", "XI MIPA 2", "Sekretaris Osis 2", "Solok/18 September 2006", "polwan", "Simpang haru", "azdraaqqilah", "6282316968969"],
@@ -24,7 +24,7 @@ export function panggilGenerateBiodataDariNama(nama){
     "M.FachrurRoziNst": ["M. Fachrur Rozi Nst", "Rozi", "X E10", "Komisi C", "Sei Bamban/10 November 2007", "TNI AD", "Asrama TNI AD TARANDAM", "m.roziii10", "6283133293518"],
     "MozartMarchelloElshie": ["Mozart Marchello Elshie", "Mozart", "XE7", "Sekbid 6", "Padang/15 Maret 2008", "Abdi negara", "Jln dr sutomo no 7", "mozartmarchello", "62883134990378"],
     "MutiaraNaswa": ["Mutiara Naswa", "Muti", "XI MIPA 6", "Bendahara MPK", "Simpang Bt. Hampar/21 Januari 2023", "perawat", "teluk nibung", "sement4araaa", "6281268121507"],
-    "NailaKhalifah Azzahra": ["Naila Khalifah Azzahra", "Naila", "xe5", "Sekbid 2", "Padang/26 April 2008", "perawat", "bukit karan", "nanaiii.laa_", "6282386649642"],
+    "NailaKhalifahAzzahra": ["Naila Khalifah Azzahra", "Naila", "xe5", "Sekbid 2", "Padang/26 April 2008", "perawat", "bukit karan", "nanaiii.laa_", "6282386649642"],
     "NaumiAmeliaFitza": ["Naumi Amelia Fitza", "Naumi", "XE.5", "Sekbid 5", "Padang/25 Desember 2007", "Polwan dan perawat", "Lubuk ipuh", "Naumiaf_25", "6289527251243"],
     "NazmaArdiaPutri": ["Nazma Ardia Putri", "Nazma", "XI MIPA 4", "Bendahara Osis 1", "Padang/07 Juni 2007", "Psikologi", "Perum.marinir angkatan laut blok D/10 Padang", "nzmrdiaapt_", "6287895656088"],
     "NesshaAdriani": ["Nessha Adriani", "Nessha", "XE 5", "Sekbid 1", "Padang/10 November 2007", "psikologi", "teluk nibung gates nan xx", "nsshadrianii", "6281275784598"],

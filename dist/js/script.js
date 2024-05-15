@@ -111,7 +111,7 @@ function seeMore() {
   <h3><a href="#" class="mb-2 block text-center text-sm md:text-lg font-semibold text-dark hover:text-primary dark:text-white">${judul}</a></h3>
   <p class="mb-6 text-base font-medium text-secondary">${deskripsi}</p>
   <div class="w-full justify-center flex">
-    <a href="#" class="rounded-lg  bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
+    <a href="./sekbid/sekbid${id}.html" class="rounded-lg  bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
   </div>
   </div>
   </div>`;
@@ -358,7 +358,7 @@ tabelProker.innerHTML = `
         </tr>
         <tr>
           <td class="py-3 border text-center dark:text-white px-4">Berkolaborasi Dengan Sekbid Lain Dalam Bidang TIK</td>
-          <td class="py-3 border text-center dark:text-white px-4">Kapanpun</td>
+          <td class="py-3 border text-center dark:text-white px-4">Fleksibel</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 9</td>
           <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
@@ -392,7 +392,7 @@ function filterTable() {
   const filterArray = filter.split(' ')
 
   if (filter === "default") {
-    // Jika filter default, tampilkan semua baris
+    // Jika filter default, tampilkan semua barisj
     for (let i = 1; i < rows.length; i++) {
       rows[i].style.display = "";
     }
@@ -616,7 +616,7 @@ document.getElementById("formKomentar").addEventListener("submit", function(even
     swal("Succes", "Komentar Anda Berhasil Ditambahkan", "success");
     tambahKomentar(nama, tanggal, komentar);
   })
-  .catch(error => {
+  .catch(error => {                   
     console.error('Error:', error);
     swal("Succes", "Komentar Anda Berhasil Ditambahkan", "success");
     tambahKomentar(nama, tanggal, komentar);

@@ -5,7 +5,7 @@ nama_nama = [
     "AntarunAsadyLuthfi",
     "ArgaAvrinaldi",
     "ArthaulZikra",
-    "AzdraAqillah",
+    "AzdraAqqilah",
     "AzzuraRathuLiona",
     "BharataAbisena",
     "ChayaraBalqisQanita",
@@ -22,7 +22,7 @@ nama_nama = [
     "Khairunnisa",
     "Khaisylla",
     "M.FachrurRoziNst",
-    "MozartMarchello.Elshie",
+    "MozartMarchelloElshie",
     "MutiaraNaswa",
     "NailaKhalifahAzzahra",
     "NaumiAmeliaFitza",
@@ -72,7 +72,7 @@ def konten_html(nama) :
             </div>
             <div>
               <a href="../index.html" class="block pt-6 sm:text-sm text-sm font-bold text-primary">OFFICIAL WEBSITE</a>
-              <a href="../index.html" class="block text-sm text-primary">SMA KARTIKA 1-5 PADANG</a>
+              <a href="../index.html" class="block text-sm text-primary">OSIS SMAKART 1-5 PADANG</a>
             </div>
           </div>
           <div class="flex items-center px-4 pt-4">

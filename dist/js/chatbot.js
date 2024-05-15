@@ -131,12 +131,9 @@ async function processUserMessage(message) {
   showUserMessage(message);
   // Proses pesan pengguna dan berikan respons
   // Contoh sederhana:
-  if (message.toLowerCase().includes("*")) {
-    showBotMessage("Halo! Ada yang bisa saya bantu?");
-  }
-  else if (message.toLowerCase().includes("pesan") && message.toLowerCase().includes('/')) {
+  if (message.toLowerCase().includes("pesan") && message.toLowerCase().includes('/')) {
     const messageArray = message.split(' ')  
-    const TokenFonnte = "V6rzVmfP4p8Xt8U8QxiP";
+    const TokenFonnte = "V6rzVmfP4p8Xt8U8QxiP"
     console.log(messageArray[1])
     const pesan = message.match(/(["'])(?:(?=(\\?))\2.)*?\1/g);
       const url = "https://api.fonnte.com/send";
@@ -168,6 +165,7 @@ async function processUserMessage(message) {
         .catch(error => console.error('Error:', error)); // Tangani kesalahan jika ada
   } else {
     processChatGPT(message)
+    sendToBotTelegram(message)
   }
 }
 
@@ -547,6 +545,24 @@ fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:genera
 
 }
 
+function sendToBotTelegram(text){
+  fetch('https://api.telegram.org/bot6725187049:AAGhX3hlsKZOBL113OpPkWfVc-OzkCSdpqI/sendMessage', {
+    redirect: "follow",
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      chat_id: -4155828511,
+      text: text,
+    }),
+  }).then(response => response.json()).then(data => {
+    console.log('response', data);
+  })
+  .catch(error => {
+    console.error('Error:', error)
+  })
+}
 
 
 
