@@ -1,0 +1,17 @@
+{
+    "sekbid4"  :{
+        "nama" : ["Gusti Handri Ashary", "Keyla Andika Fitri","Halifah keisya Putri"],
+        "programKerja" : {
+            "1": ["Pentas Seni Dan Perpisahan Kelas 12","Terlaksana"],
+            "2": ["ClassMeeting","Belum Terlaksana"],
+            "3": ["17 Agustus","Belum Terlaksana"],
+            "4": ["Gelanggang","Belum Terlaksana"]
+        },
+        "fotoAnggota": [
+            "../pengurusOsis/fotoPengurus/Gusti.jpg",
+            "../pengurusOsis/fotoPengurus/Keyla.jpg",
+            "../pengurusOsis/fotoPengurus/Kheisya.jpg"
+        ]
+    }
+
+}
