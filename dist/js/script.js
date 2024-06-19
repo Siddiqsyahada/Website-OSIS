@@ -106,7 +106,7 @@ function seeMore() {
   sekbid.classList = "w-full px-4 lg:w-1/2 xl:w-1/3";
   sekbid.innerHTML = `<h4 class="mb-2 block text-center text-xl font-semibold text-dark hover:text-primary dark:text-white">sekbid ${id}</h4>
   <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
-  <img src="https://source.unsplash.com/360x200?${picture}" alt="Programming" class="w-full" />
+  <img src="https://picsum.photos/360/200?random&${picture}" alt="${picture}" class="w-full" />
   <div class="py-4 px-6">
   <h3><a href="#" class="mb-2 block text-center text-sm md:text-lg font-semibold text-dark hover:text-primary dark:text-white">${judul}</a></h3>
   <p class="mb-6 text-base font-medium text-secondary">${deskripsi}</p>
@@ -120,13 +120,13 @@ function seeMore() {
   return sekbid;
 }
 
-  sekbid.appendChild(createSekbid(4, "Prestasi Akademik,Seni Dan Atau Olahraga", "Isi konten baru Anda di sini.","study+School"));
-  sekbid.appendChild(createSekbid(5, "Demokrasi,HAM,Pendidikan Politik,Lingkungan Hidup,Kepekaan Dan Toleransi Sosial", "Isi konten baru Anda di sini.",'Democracy'));
-  sekbid.appendChild(createSekbid(6, "Kreatifitas,Keterampilan Dan Kewirausahaan", "Isi konten baru Anda di sini.","entrepreneurship"));
-  sekbid.appendChild(createSekbid(7, "Kualitas Jasmani,Kesehatan Dan Gizi", "Isi konten baru Anda di sini.","sport+school"));
-  sekbid.appendChild(createSekbid(8, "Sastra Dan Budaya", "Isi konten baru Anda di sini.","culture"));
-  sekbid.appendChild(createSekbid(9, "Teknologi Informasi Dan Komunikasi", "Isi konten baru Anda di sini.",'Programing'));
-  sekbid.appendChild(createSekbid(10, "Komunikasi Dalam Bahasa Inggris", "Isi konten baru Anda di sini.","english+learning"));
+  sekbid.appendChild(createSekbid(4, "Prestasi Akademik,Seni Dan Atau Olahraga", "","study+School"));
+  sekbid.appendChild(createSekbid(5, "Demokrasi,HAM,Pendidikan Politik,Lingkungan Hidup,Kepekaan Dan Toleransi Sosial", "",'Democracy'));
+  sekbid.appendChild(createSekbid(6, "Kreatifitas,Keterampilan Dan Kewirausahaan", "","entrepreneurship"));
+  sekbid.appendChild(createSekbid(7, "Kualitas Jasmani,Kesehatan Dan Gizi", "","sportschool"));
+  sekbid.appendChild(createSekbid(8, "Sastra Dan Budaya", "","culture"));
+  sekbid.appendChild(createSekbid(9, "Teknologi Informasi Dan Komunikasi", "",'Programing'));
+  sekbid.appendChild(createSekbid(10, "Komunikasi Dalam Bahasa Inggris", "","languange"));
 
   }
 };
