@@ -1,57 +1,385 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Osis Sma Kartika 1-5 Padang</title>
+    <link rel="icon" href="../dist/img/logo/osis.png" type="image/x-icon">
+    <link href="dist/output.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+  </head>
+  <body id="body" class="bg-slate-100">
+    <!-- Header Start -->
+    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4 flex items-center gap-3">
+            <div class="w-16 lg:w-28 mt-5">
+              <img src="./dist/img/logo/logo_osis.png" alt="logo" width="100%" class="mr-2">
+            </div>
+            <div>
+              <a href="#" class="block pt-6 sm:text-sm text-sm font-bold text-primary">OFFICIAL WEBSITE</a>
+              <a href="#" class="block text-sm text-primary">OSIS SMAKART 1-5 PADANG</a>
+            </div>
+          </div>
+          <div class="flex items-center px-4 pt-4">
+            <button id="hamburger" name="hamburger" type="button" aria-label="HamburgerButton" class="absolute right-4 block lg:hidden">
+              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+            </button>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link href="./src/output.css" rel="stylesheet">
-</head>
-
-<body class="bg-white rounded-lg py-5">
-    <div class="container flex flex-col mx-auto bg-white rounded-lg pt-12 my-5">
-        <div class="flex justify-center w-full h-full my-auto xl:gap-14 lg:justify-normal md:gap-5 draggable">
-            <div class="flex items-center justify-center w-full lg:p-12">
-                <div class="flex items-center xl:p-10">
-                    <form class="flex flex-col w-full h-full pb-6 text-center bg-white rounded-3xl">
-                        <h3 class="mb-3 text-4xl font-extrabold text-gray-900">Login</h3>
-                        <p class="mb-4 text-gray-700">Masukkan email dan password Anda</p>
-                        <a href="#" class="flex items-center justify-center w-full py-4 mb-6 text-sm font-medium transition duration-300 rounded-2xl">
-                            <img class="h-24 mr-24" src="./src/img/logo.png" alt="logo melodius">
-                        </a>
-                        <div class="flex items-center mb-3">
-                            <hr class="h-0 border-b border-solid border-gray-500 grow">
-                            <hr class="h-0 border-b border-solid border-gray-500 grow">
-                        </div>
-                        <label for="email" class="mb-2 text-sm text-left text-gray-900">Email*</label>
-                        <input id="email" type="email" placeholder="email@contoh.com" class="flex items-center w-full px-5 py-4 mr-2 text-sm font-medium outline-none focus:bg-gray-200 mb-7 placeholder-gray-700 bg-gray-100 text-gray-900 rounded-2xl"/>
-                        <label for="password" class="mb-2 text-sm text-left text-gray-900">Password*</label>
-                        <input id="password" type="password" placeholder="Masukkan password" class="flex items-center w-full px-5 py-4 mb-5 mr-2 text-sm font-medium outline-none focus:bg-gray-200 placeholder-gray-700 bg-gray-100 text-gray-900 rounded-2xl"/>
-                        <div class="flex flex-row justify-between mb-8">
-                            <label class="relative inline-flex items-center mr-3 cursor-pointer select-none">
-                                <input type="checkbox" checked value="" class="sr-only peer">
-                                <div class="w-5 h-5 bg-white border-2 rounded-sm border-gray-500 peer peer-checked:border-0 peer-checked:bg-blue-200">
-                                    <svg class="w-4 h-4 text-blue-500 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                </div>
-                                <span class="ml-3 text-sm font-normal text-gray-900">Ingat saya</span>
-                            </label>
-                            <a href="#" class="mr-4 text-sm font-medium text-purple-blue-500">Lupa kata sandi?</a>
-                        </div>
-                        <button class="w-full px-6 py-5 mb-5 text-sm font-bold leading-none text-white transition duration-300 md:w-96 rounded-2xl hover:bg-purple-blue-600 focus:ring-4 focus:ring-purple-blue-100 bg-purple-blue-500">Masuk</button>
-                    </form>
-                </div>
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="#home" class="mx-6 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Beranda</a>
+                </li>
+                <li class="group">
+                  <a href="./pengurus.html" class="mx-6 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Pengurus</a>
+                </li>
+                <li class="group">
+                  <a href="./mpk.html" class="mx-6 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">MPK</a>
+                </li>
+                <li class="group">
+                  <a href="./gallery.html" class="mx-6 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Gallery</a>
+                </li>
+                <li class="group">
+                  <a href="./chatbot.html" class="mx-6 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Chatbot</a>
+                </li>
+                <li class="group hidden">
+                  <a href="./sekbid.html" class="mx-6 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">sekbid</a>
+                </li>
+                
+                
+                <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">light</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">dark</span>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+    
+    <!-- Hero Section Start -->
+    <section id="home" class="lg:pt-36 pt-24 dark:bg-dark overflow-hidden overscroll-x-none">
+      <div class="container px-0">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center lg:w-1/2 px-4">
+            <h1 class="text-base font-semibold text-primary  md:text-xl" style="font-size: larger;text-shadow: 1px 1px 2px gray;">Halo Semua 👋, Selamat Datang di <div class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Website <span id="judul" class="" ></span></div></h1>
+            <h2 class="mb-3 text-lg text-dark font-medium lg:text-2xl dark:text-white">SMA KARTIKA 1-5 PADANG</h2>
+            <p class="mb-10 font-medium leading-relaxed text-secondary">Temukan informasi terbaru seputar kegiatan Osis, acara sekolah, dan berbagai kegiatan seru lainnya di sini! <span class="font-bold text-dark dark:text-white">Bergabunglah bersama kami!</span></p>
+            <a href="./pengurus.html" class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg hover:border-solid hover:border-black hover:border-2" style="font-size: larger;text-shadow: 1px 1px 2px black;">Pengurus</a>
+          </div>          
+          <div class="w-full self-end md:ml-32 lg:w-1/3">
+            <div class="relative mt-10 lg:right-0 flex justify-start lg:mt-9">
+            <div class="flex">
+            <div class="relative z-10 order-1">
+                <img src="dist/img/ketos2.png" alt="Ketos" id="ketos" class="mx-auto md:max-w-md max-w-sm" width="300px" />
+            </div>
+            <div class="absolute z-10 left-28 md:left-32 order-2 mt-0.5">
+                <img src="dist/img/waketos2.png" alt="Waketos" id="waketos" class="md:max-w-md max-w-sm" width="300px"/>
             </div>
         </div>
+        <span class="absolute z-0 bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    fill="#14b8a6"
+                    d="M47.4,-51C59.2,-35.6,65.1,-17.8,63.4,-1.7C61.7,14.5,52.6,28.9,40.8,36.6C28.9,44.2,14.5,45,-2,47C-18.4,49,-36.8,52.1,-45.4,44.5C-53.9,36.8,-52.5,18.4,-51.2,1.3C-49.9,-15.8,-48.7,-31.7,-40.2,-47.1C-31.7,-62.4,-15.8,-77.3,1,-78.3C17.8,-79.2,35.6,-66.3,47.4,-51Z"
+                    transform="translate(100 100) scale(1.1)"
+                />
+            </svg>
+        </span>
     </div>
-    <div class="flex flex-wrap -mx-3 my-5">
-        <div class="w-full max-w-full sm:w-3/4 mx-auto text-center">
-            <p class="text-sm text-gray-500 py-1">
-                Aplikasi Absen Melodius SMA Kartika 1-5 Padang</a>.
-            </p>
+</div>
         </div>
-    </div>
-</body>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+    <!-- About Section Start -->
+    <section id="about" class="pb-14 dark:bg-slate-700 bg-slate-300 pt-9">
+      <div class="container">
+        <h4 class="mb-12 lg:text-3xl font-bold text-center uppercase text-primary" style="font-size: larger;text-shadow: 1px 1px 2px black;" data-aos="fade-up" data-aos-duration="1100">Tentang Osis Sma Kartika 1-5 Padang</h4>
+        <div class="flex flex-wrap">
+          <div class="mb-10 w-full px-4 lg:w-1/2">
+            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl" data-aos="fade-up">Tentang Osis SMA Kartika 1-5 Padang</h2>
+            <p class="max-w-xl text-base font-medium text-secondary lg:text-lg" data-aos="fade-up">Selamat datang di dunia kreativitas, inovasi, dan keberanian! Kami adalah OSIS SMA Kartika 1-5 Padang, tempat di mana impian dan ide-ide brilian menjadi nyata. Dari menyelenggarakan acara inspiratif hingga memberdayakan siswa-siswi dengan pelatihan unik, kami hadir untuk mewujudkan potensi terbaik dalam diri Anda. Temukan cerita inspiratif, prestasi, dan keseruan di balik layar OSIS kami, dan mari bersama mengukir sejarah gemilang di SMA Kartika 1-5 Padang!</p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl" data-aos="fade-up">Program Kerja</h2>
+            <p class="mb-6 text-base font-medium text-secondary lg:text-lg" data-aos="fade-up">
+              Jelajahi dunia program kerja kami yang penuh warna! Kami telah merancang serangkaian kegiatan edukatif, seni, dan sosial yang dirancang khusus untuk memenuhi kebutuhan dan minat semua siswa-siswi SMA Kartika 1-5 Padang. Dari proyek sosial yang peduli lingkungan hingga pelatihan kepemimpinan yang membangun karakter, setiap program kami bertujuan untuk memperkaya pengalaman belajar Anda di sekolah ini. Mari bergabung, ikut serta, dan jadilah bagian dari perubahan positif bersama kami!
+            </p>
+          </div>          
+        </div>
+        <p class="text-center text-xl font-bold dark:text-white mt-2" data-aos="fade-down">Social Media</p>
+         <div class="flex items-center mt-4 justify-center">
+              <!-- Youtube -->
+              <a
+                href="http://www.youtube.com/@osismpk977"
+                target="_blank"
+                class="mr-4 flex h-11 w-11 items-center justify-center rounded-full border bg-slate-600 text-slate-300 hover:border-primary hover:bg-primary hover:text-white" 
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
 
+              <!-- Instagram -->
+              <a
+                href="https://instagram.com/osis.smakart15"
+                target="_blank"
+                class="mr-4 flex h-11 w-11 items-center justify-center rounded-full border bg-slate-600 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                data-aos="fade-up"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Instagram</title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+              <!-- TikTok -->
+              <a
+                href="https://www.tiktok.com/@mpkosissmakart15pdg"
+                target="_blank"
+                class="mr-4 flex h-11 w-11 items-center justify-center rounded-full border bg-slate-600 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>TikTok</title>
+                  <path
+                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                  />
+                </svg>
+              </a>
+            </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Pesan Ketua Osis Section Start -->
+   <section id="portfolio" class="bg-slate-100 pt-20 pb-16 dark:bg-slate-800">
+    <h1 class="mb-10 p-4 text-3xl text-center font-bold text-primary">Ketua Osis Periode 2023/2024</h1>
+  <div class="container flex flex-col items-center sm:flex-row sm:items-center sm:justify-center">
+    <div class="order-2 sm:order-1 max-w-xl mr-10">
+      <h4 class="mb-2 font-bold lg:text-5xl sm:text-3xl text-primary" data-aos="flip-up" data-aos-duration="600">Antarun Asady Luthfi</h4>
+      <p class="text-md font-medium text-secondary md:text-lg" data-aos="fade-right" data-aos-duration="800">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus porro consequuntur alias, commodi nemo enim aliquam ipsam obcaecati? Assumenda, ipsam?</p>
+    </div>
+    <div class="order-1 sm:order-2 bg-lime max-w-xs sm:max-w-none mb-5" data-aos="fade-right" data-aos-duration="2000">
+      <img src="dist/img/ketos.png" style="width: 250px;" alt="foto ketua osis" class="w-full h-auto">
+    </div>
+  </div>
+  <!-- Pesan Ketua Osis Section End -->
+  
+</section>
+  
+    <!-- Blog Section Start -->
+    <div data-aos="fade-up">
+      <svg class="mt-1 lg:mt-0" id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#CBD5E1" fill-opacity="1" d="M0,96L24,85.3C48,75,96,53,144,69.3C192,85,240,139,288,144C336,149,384,107,432,80C480,53,528,43,576,48C624,53,672,75,720,101.3C768,128,816,160,864,160C912,160,960,128,1008,122.7C1056,117,1104,139,1152,149.3C1200,160,1248,160,1296,138.7C1344,117,1392,75,1416,53.3L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+      <section id="blog" class="bg-slate-300 pt-5 pb-32 dark:bg-dark">
+        <div class="container">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-16 max-w-xl text-center">
+              <h4 class="mb-2 text-3xl font-bold text-primary">Seksi Bidang Osis</h4>
+              <p class="text-md font-medium text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quisquam perspiciatis blanditiis dolores?</p>
+            </div>
+          </div>
+  
+          <div id="sekbid" class="flex flex-wrap">
+            <div id="sekbid1" data-aos="fade-up" class="w-full px-4 lg:w-1/2 xl:w-1/3">
+              <h4 class="mb-2 block text-center text-xl font-semibold text-dark hover:text-primary dark:text-white">sekbid 1</h4>
+              <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+                <img src="https://source.unsplash.com/360x200?islam" alt="Programming" class="w-full" />
+                <div class="py-4 px-6">
+                  <h3><a href="#" class="mb-2 block text-center text-sm md:text-lg font-semibold text-dark hover:text-primary dark:text-white">Keimanan Dan Ketakwaan Terhadap Tuhan Yang Maha Esa</a></h3>
+                  <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempore eos velit corrupti reprehenderit ducimus architecto harum nam quod totam.</p>
+                  <div class="w-full justify-center flex">
+                    <a href="./sekbid/sekbid1.html" class="rounded-lg  bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="sekbid2" data-aos="fade-up" class="w-full px-4 lg:w-1/2 xl:w-1/3">
+              <h4 class="mb-2 block text-center text-xl font-semibold text-dark hover:text-primary dark:text-white">sekbid 2</h4>
+              <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+                <img src="https://source.unsplash.com/360x200?donation+" alt="Programming" class="w-full" />
+                <div class="py-4 px-6">
+                  <h3><a href="#" class="mb-2 block text-center text-sm md:text-lg font-semibold text-dark hover:text-primary dark:text-white">Budi Pekerti Luhur/Akhlak Mulia</a></h3>
+                  <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempore eos velit corrupti reprehenderit ducimus architecto harum nam quod totam.</p>
+                  <div class="w-full justify-center flex">
+                    <a href="./sekbid/sekbid2.html" class="rounded-lg  bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="sekbid3" data-aos="fade-up" class="w-full px-4 lg:w-1/2 xl:w-1/3">
+              <h4 class="mb-2 block text-center text-xl font-semibold text-dark hover:text-primary dark:text-white">sekbid 3</h4>
+              <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+                <img src="https://source.unsplash.com/360x200?defend+the+country" alt="Programming" class="w-full" />
+                <div class="py-4 px-6">
+                  <h3><a href="#" class="mb-2 block text-center text-sm md:text-lg font-semibold text-dark hover:text-primary dark:text-white">Kepribadian Unggul,Wawasan Kebangsaan,Dan Bela Negara</a></h3>
+                  <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempore eos velit corrupti reprehenderit ducimus architecto harum nam quod totam.</p>
+                  <div class="w-full justify-center flex">
+                    <a href="./sekbid/sekbid3.html" class="rounded-lg  bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-8" >
+            <button id="seeMoreButton" onclick="seeMore()"  class="bg-primary text-white py-2 px-4 rounded-lg hover:opacity-80">Lebih banyak</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Tabel Program Kerja -->
+  <div class="lg:px-3" data-aos="fade-up">
+    <h2 class="mb-5 mt-20 max-w-md text-3xl font-bold text-primary text-center mx-auto dark:text-white lg:text-4xl">Program Kerja Osis</h2>
+    <label for="filter" class="block text-gray-700 text-sm ml-2 font-bold mb-2">Filter berdasarkan:</label>
+  <select id="filter" onchange="filterTable()" class="block w-11/12 px-4 py-2 ml-2 mb-4 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+    <option value="default">Semua</option>
+    <option value='✅'>Succes</option>
+    <option value='-'>Belum Terlaksana</option>
+    <option value="Sekbid 1">Sekbid 1</option>
+    <option value="Sekbid 2">Sekbid 2</option>
+    <option value="Sekbid 3">Sekbid 3</option>
+    <option value="Sekbid 4">Sekbid 4</option>
+    <option value="Sekbid 5">Sekbid 5</option>
+    <option value="Sekbid 6">Sekbid 6</option>
+    <option value="Sekbid 7">Sekbid 7</option>
+    <option value="Sekbid 8">Sekbid 8</option>
+    <option value="Sekbid 9">Sekbid 9</option>
+    <option value="Sekbid 10">Sekbid 10</option>
+  </select>
+  
+  <!-- Tabel data -->
+  <div class="overflow-x-auto" id="tabelProker">
+    
+  </div>
+  </div>
+    <!-- Blog Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-20 pb-32 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h2 class="mb-5 mt-20 max-w-md text-3xl font-bold text-primary text-center mx-auto dark:text-white lg:text-4xl">Kotak Suara</h2>
+            <p class="lg:text-md text-sm font-medium text-secondary md:text-lg">"Berikan pengaruhmu dalam pengembangan OSIS! Sampaikan ide, saran, dan kritikmu untuk mewujudkan perubahan yang lebih baik bersama OSIS SMA Kartika 1-5 Padang"</p>
+          </div>
+        </div>
+
+        <div class="w-full lg:mx-auto lg:w-2/3">
+          <div class="mb-8 w-full px-4">
+            <label for="kelas" class="text-base font-bold text-primary">Kelas</label>
+            <select id="kelas" class="block bg-slate-200 w-full px-4 py-2 mb-4 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+              <option value="-">Pilih Kelas</option>
+              <option value="10">Kelas 10</option>
+              <option value="11">Kelas 11</option>
+              <option value="12">Kelas 12</option>
+            </select>
+          </div>
+          <div class="mb-8 w-full px-4">
+            <label for="KritikanDanPesan" class="text-base font-bold text-primary">Pesan</label>
+            <textarea id="KritikanDanPesan" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" required></textarea>
+          </div>
+          <div class="w-full px-4">
+            <button id="btnKirim" class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">Kirim</button>
+            <div id="loading" class="hidden mt-2 text-center text-gray-500">Loading...</div>
+          </div>
+        </div>        
+      </div>
+    </section>
+    <!-- Kotak Suara Section End-->
+
+    <!-- Komentar Section Start -->
+    <section class="bg-white dark:bg-gray-900 py-8 lg:py-16 antialiased">
+      <div class="max-w-2xl mx-auto px-4">
+        <div class="flex justify-center items-center mb-6">
+          <h2 class="mb-5 mt-20 max-w-md text-3xl font-bold text-primary text-center mx-auto dark:text-white lg:text-4xl">Komentar</h2>
+        </div>
+        <form id="formKomentar" class="mb-6">
+          <div class="mb-4">
+            <label for="nama" class="block text-lg font-medium dark:text-white text-gray-400">Nama</label>
+            <input type="text" id="nama" name="nama" class="h-8 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" required>
+          </div>
+          <div class="py-2 px-4 mb-4 bg-slate-200 rounded-lg rounded-t-lg border border-gray-200 dark:border-gray-700">
+            <label for="comment" class="sr-only">Your comment</label>
+            <textarea id="comment" rows="6" class="px-0 w-full bg-slate-200 text-lg font-medium text-gray-900 border-0 focus:ring-0 focus:outline-none placeholder:text-lg dark:placeholder-gray-400" placeholder="Tulis komentar Anda..." required></textarea>
+          </div>
+          <button type="submit" class="inline-flex items-center bg-primary py-2.5 px-4 text-md font-medium text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">Kirim Komentar</button>
+        </form>
+        <!-- Daftar komentar -->
+        <div id="daftarKomentar">
+          <h4 class="text-lg font-semibold mt-4">Comment (<span id="jumlahComment"></span>)</h4>
+          <!-- Komentar akan ditampilkan di sini -->
+        </div>
+      </div>
+    </section>
+    <!-- Komentar Section End -->
+
+    <!-- Footer Start -->
+   
+
+    <!-- Footer End -->
+
+    <!-- Back to top Start -->
+    <a href="#home" class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
+      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+    </a>
+    <!-- Back to top End -->
+    <div class="justify-end">
+
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-xs font-medium bg-dark dark:bg-slate-300 text-slate-500 py-4">
+      <p>&copy; Copyright 2024 Osis Sma Kartika. All Rights Reserved.</p>
+    </footer>
+
+    <script src="dist/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:1000
+      });
+    </script>
+    <script>
+      var typed = new Typed('#judul', {
+        strings: ['Osis', 'Mpk'], // Daftar teks yang akan diketik
+        typeSpeed: 250, // Kecepatan pengetikan (milidetik per karakter)
+        backSpeed: 140, // Kecepatan penghapusan teks (milidetik per karakter)
+        loop: true // Apakah teks akan diketik ulang dari awal setelah selesai
+      });
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
 </html>

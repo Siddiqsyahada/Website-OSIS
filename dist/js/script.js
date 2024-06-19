@@ -162,7 +162,7 @@ tabelProker.innerHTML = `
           <td class="py-3 border text-center dark:text-white px-4">Penggalangan Dana</td>
           <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 1</td>
-          <td class="py-3 border text-center dark:text-white px-2">-</td>
+          <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <tr>
           <td class="py-3 border text-center dark:text-white px-4">Perayaan Hari Besar Islam</td>
@@ -180,7 +180,7 @@ tabelProker.innerHTML = `
           <td class="py-3 border text-center dark:text-white px-4">Halal Bihalal Menyambut Bulan Ramadhan</td>
           <td class="py-3 border text-center dark:text-white px-4">Maret</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 1</td>
-          <td class="py-3 border text-center dark:text-white px-2">-</td>
+          <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <tr>
           <td class="py-3 border text-center dark:text-white px-4">Bank Sampah</td>
@@ -258,13 +258,13 @@ tabelProker.innerHTML = `
           <td class="py-3 border text-center dark:text-white px-4">Perpisahan Kelas 12</td>
           <td class="py-3 border text-center dark:text-white px-4">April</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 4</td>
-          <td class="py-3 border text-center dark:text-white px-2">-</td>
+          <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <tr>
           <td class="py-3 border text-center dark:text-white px-4">LDK</td>
           <td class="py-3 border text-center dark:text-white px-4">January</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 5</td>
-          <td class="py-3 border text-center dark:text-white px-2">-</td>
+          <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <tr>
           <td class="py-3 border text-center dark:text-white px-4">Menerapkan Adiwiyata</td>
@@ -276,7 +276,7 @@ tabelProker.innerHTML = `
           <td class="py-3 border text-center dark:text-white px-4">Promosi Sekolah</td>
           <td class="py-3 border text-center dark:text-white px-4">Februari</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 5</td>
-          <td class="py-3 border text-center dark:text-white px-2">-</td>
+          <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <tr>
           <td class="py-3 border text-center dark:text-white px-4">MPLS</td>
@@ -324,7 +324,7 @@ tabelProker.innerHTML = `
           <td class="py-3 border text-center dark:text-white px-4">Senam Sehat Jasmani</td>
           <td class="py-3 border text-center dark:text-white px-4">1x Sebulan</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 7</td>
-          <td class="py-3 border text-center dark:text-white px-2">-</td>
+          <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <tr>
           <td class="py-3 border text-center dark:text-white px-4">Bunkasai</td>
@@ -372,13 +372,13 @@ tabelProker.innerHTML = `
           <td class="py-3 border text-center dark:text-white px-4">Poster Tentang Hari Besar Dalam Bahasa Inggris</td>
           <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 10</td>
-          <td class="py-3 border text-center dark:text-white px-2">-</td>
+          <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <tr>
           <td class="py-3 border text-center dark:text-white px-4">Protokol Berbahasa Inggris Saat Kultum</td>
           <td class="py-3 border text-center dark:text-white px-4">Februari</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 10</td>
-          <td class="py-3 border text-center dark:text-white px-2">-</td>
+          <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <!-- Tambahkan baris lain di sini -->
       </tbody>
@@ -486,8 +486,6 @@ document.getElementById("btnKirim").addEventListener("click", async function() {
     const data = await response.json();
     console.log('Data Pesan terbaru:', data);
   } catch (error) {
-    console.error('Error:', error);
-    // Menyembunyikan efek loading jika terjadi kesalahan
     document.getElementById("loading").classList.add("hidden");
   }
   document.getElementById("loading").classList.add("hidden");
