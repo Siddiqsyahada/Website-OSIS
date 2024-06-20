@@ -40,6 +40,9 @@ export function panggilGenerateBiodataDariNama(nama){
     "SiddiqInsanSyahada": ["Siddiq Insan Syahada", "Siddiq", "XE3", "Sekbid 9", "Padang/03 Januari 2008", "Software Engginer (Programer)", "Jalan berok 1 no.10f", "Siddiq_i_s", "62895602585445"],
     "ThaniaAnggrainiSandra": ["Thania Anggraini Sandra", "Thania", "XE6", "Sekbid 5", "Padang/28 Agustus 2007", "Apoteker", "Nuansa gria thp 2 no E11", "Xytann3", "6283195935556"],
     "VildoDegra": ["Vildo Degra", "Vildo", "XE7", "Sekbid 3", "Padang/26 Maret 2008", "TNI AL", "Jl ganting 3 no.18", "vdodga", "62895603736115"],
+    "RidhoAmirsyah": ["Ridho Amirsyah", "Coach", "-", "Pembina", "Padang/12 Agustus 1987", "-", "Perumahan Cendana Mata Air Tahap II", "ridhoamirsyah", "6282386893443"],
+    "FazzatulHusna": ["Fazzatul Husna", "Fat", "-", "Pembina", "Padang/7 Maret 1983", "-", "Blk. Asrama PHB no 4B", "fazzatulhusna", "6281266363690"],
+    "Yuniarti": ["Yuniarti", "Yuni", "-", "Pembina", "Padang/16 Juni 1963", "-", "Cendana Parak kopi blok e 8", "yuniartiys1606", "6281266363690"],
   };
 
   const dataBiodata = biodataMap[nama];
