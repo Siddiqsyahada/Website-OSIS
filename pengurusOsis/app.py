@@ -1,45 +1,45 @@
 # Daftar nama-nama yang telah diberikan
 nama_nama = [
     "AdriyansyahNugraha",
-    "Alfadhli",
-    "AntarunAsadyLuthfi",
-    "ArgaAvrinaldi",
-    "ArthaulZikra",
-    "AzdraAqqilah",
-    "AzzuraRathuLiona",
-    "BharataAbisena",
-    "ChayaraBalqisQanita",
-    "DeaAdelia",
-    "DestiJuliaRevani",
-    "DevinaMaphilindo",
-    "DiffaFirmaSuri",
-    "GustiHandriAshary",
-    "HalifaKheisyaPutri",
-    "HannyPirhadi",
-    "HansbriNovara",
-    "KaylaSaskiaAnanda",
-    "KeylaAndikaFitri",
-    "Khairunnisa",
-    "Khaisylla",
-    "M.FachrurRoziNst",
-    "MozartMarchelloElshie",
-    "MutiaraNaswa",
+    "VildoDegra",
     "NailaKhalifahAzzahra",
-    "NaumiAmeliaFitza",
-    "NazmaArdiaPutri",
-    "NesshaAdriani",
-    "NisaNurulFauziah",
-    "NurAiniZahiraMahdi",
-    "PnielZebua",
     "QuratulAyni",
-    "RahmaWulandari",
-    "RefaldiPrianata",
-    "RevalinaPutriAdrisia",
-    "RivaKeisyaEffendy",
-    "SatriaElson",
+    "AbilRaydhatulEfendi",
+    "SalsaNovita",
+    "FadhlurrahmanRaaif",
+    "SyabilaFitri",
+    "SyalwaPutiSikumbang",
+    "ZuraHumaira",
     "SiddiqInsanSyahada",
-    "ThaniaAnggrainiSandra",
-    "VildoDegra"
+    "PnielZebua",
+    "ArthaulZikra",
+    "RivaKeisyaEffendy",
+    "DiffaFirmaSuri",
+    "NesshaAdriani",
+    "chayaraBalqisQanita",
+    "MozartMarchelloElshie",
+    "SyifaSalsabilla",
+    "ArifaRasyidah",
+    "SyifaHenivauline",
+    "RizkiHeryundaAgilfi",
+    "RaffaZevio",
+    "KartikaCandraKirana",
+    "CintaFadilaPutri",
+    "RayhanRamadhan",
+    "MuhammadFauzi",
+    "MelaniSiskaRahayu",
+    "RadityaZakiRiandi",
+    "NailaInsaniBasir",
+    "NaylaDwiPutri",
+    "AndhikaDwiAmnur",
+    "AlfarMandaPutri",
+    "ChesaAmanda",
+    "ThafzaAntikaPratama",
+    "SalimaRamadani",
+    "MuhammadFahcri",
+    "OrianaCallystaIdham",
+    "NoveliaFienka",
+    "GustiHandriAshary",
 ]
 
 
@@ -92,9 +92,6 @@ def konten_html(nama) :
                 </li>
                 <li class="group">
                   <a href="../pengurus.html" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Pengurus Osis</a>
-                </li>
-                <li class="group">
-                  <a href="../mpk.html" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">MPK</a>
                 </li>
                 <li class="group">
                   <a href="../gallery.html" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Gallery</a>
@@ -158,7 +155,8 @@ def konten_html(nama) :
       function updateCountdown(tanggalLahir) {
         // Membuat tanggal target dengan menambahkan satu tahun jika tanggal lahir sudah lewat
         const now = new Date();
-        const targetDate = new Date('2024-' + tanggalLahir + 'T00:00:00');
+        const tahunSekarang = new Date().getFullYear();
+        const targetDate = new Date(tahunSekarang + 1 + '-' + tanggalLahir + 'T00:00:00');
         
         if (now > targetDate) {
             targetDate.setFullYear(targetDate.getFullYear() + 1);

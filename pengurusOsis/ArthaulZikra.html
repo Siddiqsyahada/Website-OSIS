@@ -24,7 +24,7 @@
             </div>
             <div>
               <a href="../index.html" class="block pt-6 sm:text-sm text-sm font-bold text-primary">OFFICIAL WEBSITE</a>
-              <a href="../index.html" class="block text-sm text-primary">SMA KARTIKA 1-5 PADANG</a>
+              <a href="../index.html" class="block text-sm text-primary">OSIS SMAKART 1-5 PADANG</a>
             </div>
           </div>
           <div class="flex items-center px-4 pt-4">
@@ -44,9 +44,6 @@
                 </li>
                 <li class="group">
                   <a href="../pengurus.html" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Pengurus Osis</a>
-                </li>
-                <li class="group">
-                  <a href="../mpk.html" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">MPK</a>
                 </li>
                 <li class="group">
                   <a href="../gallery.html" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Gallery</a>
@@ -110,7 +107,8 @@
       function updateCountdown(tanggalLahir) {
         // Membuat tanggal target dengan menambahkan satu tahun jika tanggal lahir sudah lewat
         const now = new Date();
-        const targetDate = new Date('2024-' + tanggalLahir + 'T00:00:00');
+        const tahunSekarang = new Date().getFullYear();
+        const targetDate = new Date(tahunSekarang + 1 + '-' + tanggalLahir + 'T00:00:00');
         
         if (now > targetDate) {
             targetDate.setFullYear(targetDate.getFullYear() + 1);

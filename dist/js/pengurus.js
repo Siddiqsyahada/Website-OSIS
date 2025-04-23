@@ -3,108 +3,96 @@
 
 // Data pengurus
 const dataPengurus = [
-  { nama: "Hansbri Novara", panggilan: "Hansbri", kelas: "XI MIPA 2", jabatan: "Ketua MPK",nomorHp:"6285156924300" },
-  { nama: "Hanny Pirhadi", panggilan: "Hanny", kelas: "XI MIPA 3", jabatan: "Wakil Ketua MPK",nomorHp:"6289636844347" },
-  { nama: "Azzura Rathu Liona", panggilan: "Zura", kelas: "XI IPA 5", jabatan: "Sekretaris MPK",nomorHp:"6282389834396" },
-  { nama: "Mutiara Naswa", panggilan: "Muti", kelas: "XI MIPA 6", jabatan: "Bendahara MPK",nomorHp:"6281268121507" },
-  { nama: "Refaldi Prianata", panggilan: "Refal", kelas: "XI MIPA 6", jabatan: "Komisi A",nomorHp:"6282172467639" },
-  { nama: "Nisa Nurul Fauziah", panggilan: "Nisa", kelas: "XE9", jabatan: "Komisi A",nomorHp:"6289529258596" },
-  { nama: "Satria Elson", panggilan: "Satria", kelas: "11 mipa 3", jabatan: "Komisi B",nomorHp:"6289508824280" },
-  { nama: "Alfadhli", panggilan: "Fadhli", kelas: "XE9", jabatan: "Komisi B",nomorHp: "6282391145456" },
-  { nama: "Pniel Zebua", panggilan: "Niel", kelas: "XE8", jabatan: "Komisi C",nomorHp:"6282185930625" },
-  { nama: "M. Fachrur Rozi Nst", panggilan: "Rozi", kelas: "X E10", jabatan: "Komisi C",nomorHp:"6283133293518" },
-  { nama: "Antarun Asady Luthfi", panggilan: "Luthfi", kelas: "Xl mipa 4", jabatan: "Ketua Osis",nomorHp: "6281371792144"},
-  { nama: "Bharata Abisena", panggilan: "Abi", kelas: "XI MIPA3", jabatan: "Wakil Ketua Osis 1",nomorHp:"6282268647109" },
-  { nama: "Kayla Saskia Ananda", panggilan: "Kayla", kelas: "XI IPS 2", jabatan: "Wakil Ketua Osis 2",nomorHp:"6288270933797" },
-  { nama: "Revalina Putri Adrisia", panggilan: "Reva", kelas: "XI MIPA 6", jabatan: "Sekretaris Osis 1",nomorHp:"6281349739780" },
-  { nama: "Azdra Aqqilah", panggilan: "Azdra", kelas: "XI MIPA 2", jabatan: "Sekretaris Osis 2",nomorHp:"6282316968969" },
-  { nama: "Nazma Ardia Putri", panggilan: "Nazma", kelas: "XI MIPA 4", jabatan: "Bendahara Osis 1",nomorHp:"6287895656088" },
-  { nama: "Nur'aini Zahira Mahdi", panggilan: "Aini", kelas: "XI IPA 6", jabatan: "Bendahara Osis 2",nomorHp:"6283184197596" },
-  { nama: "Khairunnisa", panggilan: "Karin", kelas: "Xl ips 2", jabatan: "Humas",nomorHp:"6281268046546" },
-  { nama: "Dea Adelia", panggilan: "Dea", kelas: "Xe3", jabatan: "Sekbid 1",nomorHp:"6282288511432" },
-  { nama: "Nessha Adriani", panggilan: "Nessha", kelas: "XE5", jabatan: "Sekbid 1",nomorHp:"6281275784598" },
-  { nama: "Khaisylla", panggilan: "Sylla", kelas: "X e 5", jabatan: "Sekbid 2",nomorHp:"6282170743123" },
-  { nama: "Naila Khalifah Azzahra", panggilan: "Naila", kelas: "xe5", jabatan: "Sekbid 2",nomorHp:"6282386649642" },
-  { nama: "Arga Avrinaldi", panggilan: "Arga", kelas: "XE9", jabatan: "Sekbid 3",nomorHp:"6282173241784" },
-  { nama: "Riva Keisya Effendy", panggilan: "Riva", kelas: "XE7", jabatan: "Sekbid 3",nomorHp:"6289524452002" },
-  { nama: "Vildo Degra", panggilan: "Vildo", kelas: "XE7", jabatan: "Sekbid 3",nomorHp:"62895603736115" },
-  { nama: "Gusti Handri Ashary", panggilan: "Gusti", kelas: "X.E2", jabatan: "Sekbid 4",nomorHp:"628126815664" },
-  { nama: "Halifa Kheisya Putri", panggilan: "Kheisya", kelas: "X E 9", jabatan: "Sekbid 4",nomorHp:"6283179312482" },
-  { nama: "Keyla Andika Fitri", panggilan: "Keyla", kelas: "XE8", jabatan: "Sekbid 4",nomorHp:"62895359530951" },
-  { nama: "Naumi Amelia Fitza", panggilan: "Naumi", kelas: "XE.5", jabatan: "Sekbid 5",nomorHp:"6289527251243" },
-  { nama: "Thania Anggraini ", panggilan: "Thania", kelas: "XE6", jabatan: "Sekbid 5",nomorHp:"6283195935556" },
-  { nama: "Devina Maphilindo", panggilan: "Devin", kelas: "XE7", jabatan: "Sekbid 6",nomorHp:"6282386433761" },
-  { nama: "Mozart Marchello E", panggilan: "Mozart", kelas: "XE7", jabatan: "Sekbid 6",nomorHp:"62883134990378" },
-  { nama: "Adriyansyah Nugraha", panggilan: "Adri", kelas: "xe5", jabatan: "Sekbid 7",nomorHp:"62895618785787" },
-  { nama: "Arthaul Zikra", panggilan: "Zikra", kelas: "XE10", jabatan: "Sekbid 7",nomorHp:"6281371857590" },
-  { nama: "Desti Julia Revani", panggilan: "Rere", kelas: "XE6", jabatan: "Sekbid 8",nomorHp:"62895360799904" },
-  { nama: "Chayara Balqis Q", panggilan: "Yara", kelas: "XE4", jabatan: "Sekbid 8",nomorHp:"6285263285986" },
-  { nama: "Siddiq Insan Syahada", panggilan: "Siddiq", kelas: "XE3", jabatan: "Sekbid 9",nomorHp:"62895602585445" },
-  { nama: "Quratul Ayni", panggilan: "Ayni", kelas: "xe5", jabatan: "Sekbid 9",nomorHp:"6283132967557" },
-  { nama: "Diffa Firma Suri", panggilan: "Dipa", kelas: "XE9", jabatan: "Sekbid 10",nomorHp:"6283841518993" },
-  { nama: "Rahma Wulandari", panggilan: "Wulan", kelas: "XI IIS 4", jabatan: "Sekbid 10",nomorHp:"6283164134072" },
+  { nama: "Adriyansyah Nugraha", panggilan: "Adri", kelas: "XI.F1", jabatan: "Ketua MPK", instagram: "Adrynsnn" },
+  { nama: "Vildo Degra", panggilan: "Vildo", kelas: "XI.F4", jabatan: "Wakil Ketua MPK", instagram: "Vdodga_" },
+  { nama: "Naila Khalifah Azzahra", panggilan: "Naila", kelas: "XI.F5", jabatan: "Sekretaris MPK", instagram: "nnaiii.laa_" },
+  { nama: "Quratul Ayni", panggilan: "Ayni", kelas: "XI.F3", jabatan: "Bendahara MPK", instagram: "qrtl.ay" },
+  { nama: "Abil Raydhatul Efendi", panggilan: "Abil", kelas: "X.E2", jabatan: "Komisi A", instagram: "abilfyuu" },
+  { nama: "Salsa Novita", panggilan: "Salsa", kelas: "X.E2", jabatan: "Komisi A", instagram: "sasabc71" },
+  { nama: "Fadhlurrahman Raaif", panggilan: "Raaif", kelas: "X.E2", jabatan: "Komisi B", instagram: "Fadhlurrahmanraaif55" },
+  { nama: "Syabila Fitri", panggilan: "billa", kelas: "X.E4", jabatan: "Komisi B", instagram: "sbilafitri_" },
+  { nama: "Syalwa Puti Sikumbang", panggilan: "Syalwa", kelas: "X.E10", jabatan: "Komisi C", instagram: "syalwawwa" },
+  { nama: "Zura Humaira", panggilan: "Zura", kelas: "X.E3", jabatan: "Komisi C", instagram: "--" },
+  { nama: "Siddiq Insan Syahada", panggilan: "Siddiq", kelas: "XI.F4", jabatan: "Ketua OSIS", instagram: "siddiq_i_s" },
+  { nama: "Pniel Zebua", panggilan: "Niel", kelas: "XI.F5", jabatan: "Wakil Ketua OSIS 1", instagram: "nyelzbw" },
+  { nama: "Arthaul Zikra", panggilan: "Zikra", kelas: "XI.F5", jabatan: "Wakil Ketua OSIS 2", instagram: "zikzik08" },
+  { nama: "Riva Keisya Effendy", panggilan: "Riva", kelas: "XI.F9", jabatan: "Sekretaris OSIS 1", instagram: "Rvakyy" },
+  { nama: "Diffa Firma Suri", panggilan: "Dipaa", kelas: "XI.F5", jabatan: "Sekretaris OSIS 2", instagram: "diffafirmaa" },
+  { nama: "Nessha Adriani", panggilan: "nessha ", kelas: "XI.F5", jabatan: "Bendahara OSIS 1", instagram: "nesshaadrianii" },
+  { nama: "chayara Balqis Qanita", panggilan: "chayara", kelas: "XI.F6", jabatan: "Bendahara OSIS 2", instagram: "chayarals" },
+  { nama: "Mozart Marchello Elshie", panggilan: "Mozart", kelas: "XI.F9", jabatan: "Humas", instagram: "mozartmarchello" },
+  { nama: "Syifa Salsabilla", panggilan: "Syifa ", kelas: "X.E2", jabatan: "Dokumentasi 1", instagram: "Faassyiii_" },
+  { nama: "Arifa Rasyidah", panggilan: "Arifa", kelas: "X.E3", jabatan: "Dokumentasi 2", instagram: "rfha_rasydh " },
+  { nama: "Syifa Henivauline", panggilan: "Syifa ", kelas: "X.E9", jabatan: "Sekbid 1", instagram: "syifahenivauline" },
+  { nama: "Rizki Heryunda Agilfi", panggilan: "Rizki", kelas: "X.E3", jabatan: "Sekbid 1", instagram: "--" },
+  { nama: "Raffa Zevio", panggilan: "Raffa", kelas: "X.E1", jabatan: "Sekbid 2", instagram: "raffa_zvio" },
+  { nama: "Kartika Candra Kirana", panggilan: "Kartika", kelas: "X.E10", jabatan: "Sekbid 2", instagram: "kartikaaa.candra" },
+  { nama: "Cinta Fadila Putri", panggilan: "cinta", kelas: "XI.F5", jabatan: "Sekbid 3", instagram: "cntafdlh_" },
+  { nama: "Rayhan Ramadhan", panggilan: "Ray", kelas: "X.E3", jabatan: "Sekbid 3", instagram: "ray.rmdh20" },
+  { nama: "Muhammad Fauzi", panggilan: "Fauzi", kelas: "X.E8", jabatan: "Sekbid 4", instagram: "fauxii10" },
+  { nama: "Melani Siska Rahayu", panggilan: "melani", kelas: "X.E7", jabatan: "Sekbid 4", instagram: "melanisiska32" },
+  { nama: "Raditya Zaki Riandi", panggilan: "Radit", kelas: "X.E8", jabatan: "Sekbid 5", instagram: "snr_shark" },
+  { nama: "Naila Insani Basir", panggilan: "Naila", kelas: "X.E2", jabatan: "Sekbid 5", instagram: "naylainsanii_" },
+  { nama: "Nayla Dwi Putri", panggilan: "Nanayy", kelas: "X.E10", jabatan: "Sekbid 6", instagram: "Nyladwiptr__" },
+  { nama: "Andhika Dwi Amnur", panggilan: "Dhika", kelas: "X.E9", jabatan: "Sekbid 6", instagram: "dhika_dwiamnur" },
+  { nama: "Alfar Manda Putri", panggilan: "Manda", kelas: "X.E3", jabatan: "Sekbid 7", instagram: "alfarmandaa" },
+  { nama: "Chesa Amanda", panggilan: "chesa", kelas: "X.E4", jabatan: "Sekbid 7", instagram: "" },
+  { nama: "Thafza Antika Pratama", panggilan: "Azha", kelas: "X.E3", jabatan: "Sekbid 8", instagram: "Siantikaxd" },
+  { nama: "Salima Ramadani", panggilan: "Salima", kelas: "X.E7", jabatan: "Sekbid 8", instagram: "Its_salimaa" },
+  { nama: "Muhammad Fahcri", panggilan: "Fahri", kelas: "X.E9", jabatan: "Sekbid 9", instagram: "muhammad_fahri_ryy" },
+  { nama: "Oriana Callysta Idham", panggilan: "Orin", kelas: "XI.F4", jabatan: "Sekbid 9", instagram: "orianacally" },
+  { nama: "Novelia Fienka", panggilan: "Velia", kelas: "X.E3", jabatan: "Sekbid 10", instagram: "veliaa281" },
+  { nama: "Gusti Handri Ashary", panggilan: "Gusti", kelas: "XI.F5", jabatan: "Sekbid 10", instagram: "hndriiashary._" },
 ];
 
 
 // Fungsi untuk menampilkan kartu pengurus
-function tampilkanKartuPengurus(dataPengurus,MPKatauOSIS) {
+const kategoriPengurus = {
+  Mpk: ["Ketua MPK", "Wakil Ketua MPK", "Sekretaris MPK", "Bendahara MPK", "Komisi A", "Komisi B", "Komisi C"],
+  IntiOsis: ["Ketua OSIS", "Wakil Ketua OSIS 1", "Wakil Ketua OSIS 2", "Sekretaris OSIS 1", "Sekretaris OSIS 2", "Bendahara OSIS 1", "Bendahara OSIS 2", "Humas","Dokumentasi 1","Dokumentasi 2"],
+  AnggotaOsis: ["Sekbid 1", "Sekbid 2", "Sekbid 3", "Sekbid 4", "Sekbid 5", "Sekbid 6", "Sekbid 7", "Sekbid 8", "Sekbid 9", "Sekbid 10"]
+};
+
+function tampilkanKartuPengurus(dataPengurus, MPKatauOSIS) {
   const containerKartu = document.getElementById("containerKartu" + MPKatauOSIS);
-  
-  let i = 0
-  let batasData
+  const jabatanList = kategoriPengurus[MPKatauOSIS];
 
-  if (MPKatauOSIS == "Mpk"){
-    i = 0
-    batasData = 10
-  }else if (MPKatauOSIS == "IntiOsis"){
-    i = 10
-    batasData = 18
-  }else if (MPKatauOSIS == "AnggotaOsis"){
-    i = 18
-    batasData = 40
-  }
+  const pengurusFiltered = dataPengurus.filter(p => jabatanList.includes(p.jabatan));
 
-  // Buat kartu untuk setiap data pengurus
-  for (i; i < batasData; i++) {
-    const pengurus = dataPengurus[i];
-    const biodataLink = dataPengurus[i].nama.replace(/\s+/g, '')
+  pengurusFiltered.forEach(pengurus => {
+    const biodataLink = pengurus.nama.replace(/\s+/g, '');
 
-    // Buat elemen kartu baru
     const cardDiv = document.createElement("div");
-    cardDiv.classList.add("flex", "lg:w-1/3", "p-4", "lg:m-2", "lg:border-solid", "lg:border-slate-400", "rounded-lg", "lg:bg-slate-300", "lg:border-4", "lg:p-7");
+    cardDiv.className = "flex lg:w-1/3 p-4 lg:m-2 lg:border-solid lg:border-slate-400 rounded-lg lg:bg-slate-300 lg:border-4 lg:p-7";
 
-    // Buat struktur HTML untuk kartu pengurus
     cardDiv.innerHTML = `
       <div class="border-solid rounded-md justify-center border-4 border-primary">
-        <img class="w-[140px] h-40 flex justify-center rounded-md bg-cover" src="./pengurusOsis/fotoPengurus/${pengurus.panggilan}.jpg" alt="Foto ${pengurus.panggilan}">
+        <img class="w-[180px] h-40 flex justify-center rounded-md bg-cover" src="./dist/img/fotoPengurus/${pengurus.nama}.jpg" alt="Foto ${pengurus.nama}">
       </div>
       <div class="w-full h-full">
         <div class="p-3 items-center flex-row">
-          <p><span class="text-md font-semibold">Nama : </span> ${pengurus.nama}</p>
-          <p><span class="text-md font-semibold">Panggilan: </span>${pengurus.panggilan}</p>
-          <p><span class="text-md font-semibold">Kelas: </span>${pengurus.kelas}</p>
-          <p><span class="text-md font-semibold">Jabatan: </span>${pengurus.jabatan}</p>
-      </div>
-      <div class="flex ml-1 items-center justify-between gap-4">
-        <button type="button" class="w-1/2 px-4 py-2 text-base bg-white border-2 rounded-lg text-grey-500 hover:bg-gray-200">
-          <a href="https://wa.me/${pengurus.nomorHp}" class="w-full h-full block">
-            Chat
-          </a>
-        </button>
-    <button type="button" class="w-1/2 px-4 py-2 text-base text-white bg-primary border rounded-lg hover:bg-blue-400">
-          <a href="./pengurusOsis/${biodataLink}.html">Biodata</a>
-        </button>
+          <p><span class="text-md font-semibold">Nama: </span> ${pengurus.nama}</p>
+          <p><span class="text-md font-semibold">Panggilan: </span> ${pengurus.panggilan}</p>
+          <p><span class="text-md font-semibold">Kelas: </span> ${pengurus.kelas}</p>
+          <p><span class="text-md font-semibold">Jabatan: </span> ${pengurus.jabatan}</p>
         </div>
-      </div>`;
+        <div class="flex ml-1 items-center justify-between gap-4">
+         <!-- <button type="button" class="w-1/2 px-4 py-2 text-base bg-white border-2 rounded-lg text-grey-500 hover:bg-gray-200">
+            <a href="https://wa.me/${pengurus.nomorHp}" class="w-full h-full block">IG</a>
+          </button> -->
+          <button type="button" class="w-1/2 px-4 py-2 text-base text-white bg-primary border rounded-lg hover:bg-blue-400">
+            <a href="./pengurusOsis/${biodataLink}.html">Biodata</a>
+          </button>
+        </div>
+      </div>
+    `;
 
-    // Tambahkan kartu ke dalam container kartu
     containerKartu.appendChild(cardDiv);
-    console.log(pengurus)
-  }
+  });
 }
 
-tampilkanKartuPengurus(dataPengurus,"Mpk");
-tampilkanKartuPengurus(dataPengurus,"IntiOsis");
-tampilkanKartuPengurus(dataPengurus,"AnggotaOsis");
-
+// Pemanggilan fungsi
+tampilkanKartuPengurus(dataPengurus, "Mpk");
+tampilkanKartuPengurus(dataPengurus, "IntiOsis");
+tampilkanKartuPengurus(dataPengurus, "AnggotaOsis");
 
