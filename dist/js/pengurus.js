@@ -3,6 +3,9 @@
 
 // Data pengurus
 const dataPengurus = [
+  { nama: "Rendy Budiman", panggilan: "Buren", kelas: "9", jabatan: "Pembina OSIS 1", instagram: "rendyburen" },
+  { nama: "Fazzatul Husna", panggilan: "-", kelas: "-", jabatan: "Pembina OSIS 2", instagram: "-" },
+  { nama: "Yuniarti", panggilan: "-", kelas: "-", jabatan: "Pembina OSIS 3", instagram: "-" },
   { nama: "Adriyansyah Nugraha", panggilan: "Adri", kelas: "XI.F1", jabatan: "Ketua MPK", instagram: "Adrynsnn" },
   { nama: "Vildo Degra", panggilan: "Vildo", kelas: "XI.F4", jabatan: "Wakil Ketua MPK", instagram: "Vdodga_" },
   { nama: "Naila Khalifah Azzahra", panggilan: "Naila", kelas: "XI.F5", jabatan: "Sekretaris MPK", instagram: "nnaiii.laa_" },
@@ -21,8 +24,8 @@ const dataPengurus = [
   { nama: "Nessha Adriani", panggilan: "nessha ", kelas: "XI.F5", jabatan: "Bendahara OSIS 1", instagram: "nesshaadrianii" },
   { nama: "chayara Balqis Qanita", panggilan: "chayara", kelas: "XI.F6", jabatan: "Bendahara OSIS 2", instagram: "chayarals" },
   { nama: "Mozart Marchello Elshie", panggilan: "Mozart", kelas: "XI.F9", jabatan: "Humas", instagram: "mozartmarchello" },
-  { nama: "Syifa Salsabilla", panggilan: "Syifa ", kelas: "X.E2", jabatan: "Dokumentasi 1", instagram: "Faassyiii_" },
-  { nama: "Arifa Rasyidah", panggilan: "Arifa", kelas: "X.E3", jabatan: "Dokumentasi 2", instagram: "rfha_rasydh " },
+  { nama: "Arifa Rasyidah", panggilan: "Arifa", kelas: "X.E3", jabatan: "Dokumentasi 1", instagram: "rfha_rasydh " },
+  { nama: "Syifa Salsabilla", panggilan: "Syifa ", kelas: "X.E2", jabatan: "Dokumentasi 2", instagram: "Faassyiii_" },
   { nama: "Syifa Henivauline", panggilan: "Syifa ", kelas: "X.E9", jabatan: "Sekbid 1", instagram: "syifahenivauline" },
   { nama: "Rizki Heryunda Agilfi", panggilan: "Rizki", kelas: "X.E3", jabatan: "Sekbid 1", instagram: "--" },
   { nama: "Raffa Zevio", panggilan: "Raffa", kelas: "X.E1", jabatan: "Sekbid 2", instagram: "raffa_zvio" },
@@ -48,14 +51,15 @@ const dataPengurus = [
 
 // Fungsi untuk menampilkan kartu pengurus
 const kategoriPengurus = {
+  Pembina: ["Pembina OSIS 1", "Pembina OSIS 2", "Pembina OSIS 3"],
   Mpk: ["Ketua MPK", "Wakil Ketua MPK", "Sekretaris MPK", "Bendahara MPK", "Komisi A", "Komisi B", "Komisi C"],
   IntiOsis: ["Ketua OSIS", "Wakil Ketua OSIS 1", "Wakil Ketua OSIS 2", "Sekretaris OSIS 1", "Sekretaris OSIS 2", "Bendahara OSIS 1", "Bendahara OSIS 2", "Humas","Dokumentasi 1","Dokumentasi 2"],
   AnggotaOsis: ["Sekbid 1", "Sekbid 2", "Sekbid 3", "Sekbid 4", "Sekbid 5", "Sekbid 6", "Sekbid 7", "Sekbid 8", "Sekbid 9", "Sekbid 10"]
 };
 
-function tampilkanKartuPengurus(dataPengurus, MPKatauOSIS) {
-  const containerKartu = document.getElementById("containerKartu" + MPKatauOSIS);
-  const jabatanList = kategoriPengurus[MPKatauOSIS];
+function tampilkanKartuPengurus(dataPengurus, jabatan) {
+  const containerKartu = document.getElementById("containerKartu" + jabatan);
+  const jabatanList = kategoriPengurus[jabatan];
 
   const pengurusFiltered = dataPengurus.filter(p => jabatanList.includes(p.jabatan));
 
@@ -92,6 +96,7 @@ function tampilkanKartuPengurus(dataPengurus, MPKatauOSIS) {
 }
 
 // Pemanggilan fungsi
+tampilkanKartuPengurus(dataPengurus, "Pembina");
 tampilkanKartuPengurus(dataPengurus, "Mpk");
 tampilkanKartuPengurus(dataPengurus, "IntiOsis");
 tampilkanKartuPengurus(dataPengurus, "AnggotaOsis");

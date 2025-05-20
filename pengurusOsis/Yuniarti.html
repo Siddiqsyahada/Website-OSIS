@@ -1,55 +1,4 @@
-# Daftar nama-nama yang telah diberikan
-nama_nama = [
-    "RendyBudiman",
-    "FazzatulHusna",
-    "Yuniarti",
-    "AdriyansyahNugraha",
-    "VildoDegra",
-    "NailaKhalifahAzzahra",
-    "QuratulAyni",
-    "AbilRaydhatulEfendi",
-    "SalsaNovita",
-    "FadhlurrahmanRaaif",
-    "SyabilaFitri",
-    "SyalwaPutiSikumbang",
-    "ZuraHumaira",
-    "SiddiqInsanSyahada",
-    "PnielZebua",
-    "ArthaulZikra",
-    "RivaKeisyaEffendy",
-    "DiffaFirmaSuri",
-    "NesshaAdriani",
-    "chayaraBalqisQanita",
-    "MozartMarchelloElshie",
-    "SyifaSalsabilla",
-    "ArifaRasyidah",
-    "SyifaHenivauline",
-    "RizkiHeryundaAgilfi",
-    "RaffaZevio",
-    "KartikaCandraKirana",
-    "CintaFadilaPutri",
-    "RayhanRamadhan",
-    "MuhammadFauzi",
-    "MelaniSiskaRahayu",
-    "RadityaZakiRiandi",
-    "NailaInsaniBasir",
-    "NaylaDwiPutri",
-    "AndhikaDwiAmnur",
-    "AlfarMandaPutri",
-    "ChesaAmanda",
-    "ThafzaAntikaPratama",
-    "SalimaRamadani",
-    "MuhammadFahcri",
-    "OrianaCallystaIdham",
-    "NoveliaFienka",
-    "GustiHandriAshary",
-]
 
-
-
-# Konten HTML yang akan ditulis pada setiap file
-def konten_html(nama) :
-  return """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -131,7 +80,7 @@ def konten_html(nama) :
     </div>
     <script type="module">
         import {panggilGenerateBiodataDariNama} from '../dist/js/biodata.js'
-        const biodata = document.getElementById('biodata');""" + f"biodata.innerHTML = panggilGenerateBiodataDariNama('{nama}')" +"""
+        const biodata = document.getElementById('biodata');biodata.innerHTML = panggilGenerateBiodataDariNama('Yuniarti')
 
         const birthday = document.getElementById('tanggalLahir').nextSibling.textContent.trim().split('/')
         function ubahFormatTanggal(tanggal) {
@@ -182,24 +131,3 @@ def konten_html(nama) :
 
 </body>
 </html>
-""" 
-
-
-import os
-
-# Mendapatkan path ke direktori dari file app.py
-dir_path = os.path.dirname(os.path.realpath(__file__))
-
-for nama in nama_nama:
-    # Membuat nama file dengan mengganti spasi dengan garis bawah dan menambahkan ekstensi .html
-    nama_file = f"{nama.replace(' ', '_')}.html"
-    print(len(nama_nama))
-    
-    # Menyimpan file dalam direktori yang sama dengan file app.py
-    file_path = os.path.join(dir_path, nama_file)
-
-    # Membuka file HTML dan menuliskan konten HTML ke dalamnya
-    with open(file_path, 'w', encoding='utf-8') as file:
-        file.write(konten_html(nama))
-
-    print(f"File HTML '{file_path}' telah dibuat dengan konten yang diminta.")

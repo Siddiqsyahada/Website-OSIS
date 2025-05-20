@@ -1,5 +1,8 @@
 export function panggilGenerateBiodataDariNama(nama){
   const biodataMap = {
+    "RendyBudiman" : ["Rendy Budiman", "-", "-", "Pembina OSIS", "-", "-", "-"],
+    "FazzatulHusna" : ["Fazzatul Husna", "-", "-", "Pembina OSIS", "-", "-", "-"],
+    "Yuniarti" : ["Yuniarti", "-", "-", "Pembina OSIS", "-", "-", "-"],
     "AdriyansyahNugraha" : ["Adriyansyah Nugraha", "Adri", "XI.F1", "Ketua MPK", "padang/24 Januari 2008", "Pengusaha ", "Adrynsnn"],
     "VildoDegra" : ["Vildo Degra", "Vildo", "XI.F4", "Wakil Ketua MPK", "Padang/26 Maret 2008", "TNI AL", "Vdodga_"],
     "NailaKhalifahAzzahra" : ["Naila Khalifah Azzahra", "Naila", "XI.F5", "Sekretaris MPK", "padang/26 April 2008", "Sukses", "nnaiii.laa_"],
@@ -121,7 +124,7 @@ function generateBiodata(namaLengkap,panggilan,kelas,jabatan,tanggalLahir,citaCi
                 </div> -->
                 </div>
                 </div>
-                <p class="font-semibold items-center mt-2 text-shadow-xs underline text-center">@${usernameIg}</p>
+                <p class="font-semibold items-center mt-2 block lg:hidden text-shadow-xs underline text-center">@${usernameIg}</p>
         </div>
     </div>
     </div>
