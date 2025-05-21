@@ -3,6 +3,8 @@ window.onscroll = function () {
   const header = document.querySelector('header');
   const fixedNav = header.offsetTop;
   const toTop = document.querySelector('#to-top');
+  const orin = "hfkjahkjfghakjghka"
+  let siddiq = 'jflajfla'
 
   if (window.pageYOffset > fixedNav) {
     header.classList.add('navbar-fixed');
@@ -153,232 +155,214 @@ tabelProker.innerHTML = `
       </thead>
       <tbody class="text-gray-700" >
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">mengadakan kultum</td>
-          <td class="py-3 border text-center dark:text-white px-4">2x Sebulan</td>
+          <td class="py-3 border text-center dark:text-white px-4">Mengadakan Kultum</td>
+          <td class="py-3 border text-center dark:text-white px-4">Setiap Jumat</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 1</td>
           <td class="py-3 border text-center dark:text-white px-2">✅</td>
+        </tr>
+        <tr>
+          <td class="py-3 border text-center dark:text-white px-4">Open Donasi</td>
+          <td class="py-3 border text-center dark:text-white px-4">Setelah MPLS</td>
+          <td class="py-3 border text-center dark:text-white px-4">Sekbid 1</td>
+          <td class="py-3 border text-center dark:text-white px-2">-</td>
         </tr>
         <tr>
           <td class="py-3 border text-center dark:text-white px-4">Penggalangan Dana</td>
           <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 1</td>
-          <td class="py-3 border text-center dark:text-white px-2">✅</td>
+          <td class="py-3 border text-center dark:text-white px-2">-</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Perayaan Hari Besar Islam</td>
-          <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
+          <td class="py-3 border text-center dark:text-white px-4">Bagi-bagi Takjil</td>
+          <td class="py-3 border text-center dark:text-white px-4">19 Maret</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 1</td>
           <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Lomba Bernuansa Islam</td>
-          <td class="py-3 border text-center dark:text-white px-4">Class   Meeting</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 1</td>
-          <td class="py-3 border text-center dark:text-white px-2">-</td>
-        </tr>
-        <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Halal Bihalal Menyambut Bulan Ramadhan</td>
-          <td class="py-3 border text-center dark:text-white px-4">Maret</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 1</td>
-          <td class="py-3 border text-center dark:text-white px-2">✅</td>
-        </tr>
-        <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Bank Sampah</td>
-          <td class="py-3 border text-center dark:text-white px-4">1x Sebulan</td>
+          <td class="py-3 border text-center dark:text-white px-4">Melaksanakan Gotong Royong</td>
+          <td class="py-3 border text-center dark:text-white px-4">Setiap Rabu</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 2</td>
           <td class="py-3 border text-center dark:text-white px-2">-</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Pameran Kreativitas Dari Barang Bekas Berkolaborasi Dengan Sekbid 6</td>
-          <td class="py-3 border text-center dark:text-white px-4">Desember</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 2</td>
-          <td class="py-3 border text-center dark:text-white px-2">-</td>
-        </tr>
-        <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Lomba Video Kreatif Tentang Sumbang Duo Baleh</td>
-          <td class="py-3 border text-center dark:text-white px-4">Class    Meeting</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 2</td>
-          <td class="py-3 border text-center dark:text-white px-2">-</td>
-        </tr>
-        <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Poster Kato Nan Ampek</td>
+          <td class="py-3 border text-center dark:text-white px-4">Melaksanakan Lomba Kebersihan Kelas</td>
           <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 2</td>
           <td class="py-3 border text-center dark:text-white px-2">-</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Melaksanakan Upacara Bendera</td>
+          <td class="py-3 border text-center dark:text-white px-4">Mengadakan Bansos</td>
+          <td class="py-3 border text-center dark:text-white px-4">Setelah MPLS</td>
+          <td class="py-3 border text-center dark:text-white px-4">Sekbid 2</td>
+          <td class="py-3 border text-center dark:text-white px-2">-</td>
+        </tr>
+        <tr>
+          <td class="py-3 border text-center dark:text-white px-4">Melaksanakan Upacara pada Hari Senin dan Hari Nasional</td>
           <td class="py-3 border text-center dark:text-white px-4">Setiap Senin</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 3</td>
           <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Melaksanakan Upacara Setiap Hari Besar Indonesia</td>
-          <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 3</td>
-          <td class="py-3 border text-center dark:text-white px-2">✅</td>
-        </tr>
-        <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Menyanyikan Lagu Indonesia Raya Sebelum Memulai PBM</td>
-          <td class="py-3 border text-center dark:text-white px-4">Setiap Hari</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 3</td>
-          <td class="py-3 border text-center dark:text-white px-2">✅</td>
-        </tr>
-        <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Lomba LTUB</td>
-          <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
+          <td class="py-3 border text-center dark:text-white px-4">Memutar Lagu Nasional saat Istirahat</td>
+          <td class="py-3 border text-center dark:text-white px-4">Setiap Senin</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 3</td>
           <td class="py-3 border text-center dark:text-white px-2">-</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Gelanggang</td>
+          <td class="py-3 border text-center dark:text-white px-4">Education On Sosmed</td>
+          <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
+          <td class="py-3 border text-center dark:text-white px-4">Sekbid 3</td>
+          <td class="py-3 border text-center dark:text-white px-2"></td>
+        </tr>
+        <tr>
+          <td class="py-3 border text-center dark:text-white px-4">Pawai Alegoris</td>
+          <td class="py-3 border text-center dark:text-white px-4">17 Agustus</td>
+          <td class="py-3 border text-center dark:text-white px-4">Sekbid 3</td>
+          <td class="py-3 border text-center dark:text-white px-2">-</td>
+        </tr>
+        <tr>
+          <td class="py-3 border text-center dark:text-white px-4">Cool Eduvation</td>
           <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 4</td>
           <td class="py-3 border text-center dark:text-white px-2">-</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Class Meeting</td>
-          <td class="py-3 border text-center dark:text-white px-4">Mei/Juni</td>
+          <td class="py-3 border text-center dark:text-white px-4">Classmeet</td>
+          <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 4</td>
-          <td class="py-3 border text-center dark:text-white px-2">-</td>
+          <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <tr>
           <td class="py-3 border text-center dark:text-white px-4">Lomba 17 Agustus</td>
-          <td class="py-3 border text-center dark:text-white px-4">17    Agustus</td>
+          <td class="py-3 border text-center dark:text-white px-4">17 Agustus</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 4</td>
           <td class="py-3 border text-center dark:text-white px-2">-</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Pensi Kelas 12</td>
-          <td class="py-3 border text-center dark:text-white px-4">11 November 2023</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 4</td>
-          <td class="py-3 border text-center dark:text-white px-2">✅</td>
-        </tr>
-        <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Perpisahan Kelas 12</td>
-          <td class="py-3 border text-center dark:text-white px-4">April</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 4</td>
-          <td class="py-3 border text-center dark:text-white px-2">✅</td>
-        </tr>
-        <tr>
-          <td class="py-3 border text-center dark:text-white px-4">LDK</td>
-          <td class="py-3 border text-center dark:text-white px-4">January</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 5</td>
-          <td class="py-3 border text-center dark:text-white px-2">✅</td>
-        </tr>
-        <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Menerapkan Adiwiyata</td>
-          <td class="py-3 border text-center dark:text-white px-4">Desember</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 5</td>
-          <td class="py-3 border text-center dark:text-white px-2">✅</td>
-        </tr>
-        <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Promosi Sekolah</td>
-          <td class="py-3 border text-center dark:text-white px-4">Februari</td>
+          <td class="py-3 border text-center dark:text-white px-4">Video Promosi Sekolah</td>
+          <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 5</td>
           <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <tr>
           <td class="py-3 border text-center dark:text-white px-4">MPLS</td>
-          <td class="py-3 border text-center dark:text-white px-4">Juli</td>
+          <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 5</td>
           <td class="py-3 border text-center dark:text-white px-2">-</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Membuat Bazar Saat Event Pensi Kelas 12</td>
-          <td class="py-3 border text-center dark:text-white px-4">11 November 2023</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 6</td>
-          <td class="py-3 border text-center dark:text-white px-2">✅</td>
-        </tr>
-        <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Bazar Hasil Karya Siswa</td>
-          <td class="py-3 border text-center dark:text-white px-4">November</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 6</td>
-          <td class="py-3 border text-center dark:text-white px-2">-</td>
-        </tr>
-        <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Lomba Kreativitas Bertema Hari Pramuka</td>
-          <td class="py-3 border text-center dark:text-white px-4">14 Agustus</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 6</td>
-          <td class="py-3 border text-center dark:text-white px-2">-</td>
-        </tr>
-        <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Membawa Bekal Dari Rumah</td>
-          <td class="py-3 border text-center dark:text-white px-4">November</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 7</td>
-          <td class="py-3 border text-center dark:text-white px-2">✅</td>
-        </tr>
-        <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Video Pola Hidup Sehat</td>
+          <td class="py-3 border text-center dark:text-white px-4">Pembinaan Kepemimpinan Ketua Kelas</td>
           <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 7</td>
+          <td class="py-3 border text-center dark:text-white px-4">Sekbid 5</td>
           <td class="py-3 border text-center dark:text-white px-2">-</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Menyukseskan Class Meeting</td>
-          <td class="py-3 border text-center dark:text-white px-4">Juni/July</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 7</td>
+          <td class="py-3 border text-center dark:text-white px-4">Bazar</td>
+          <td class="py-3 border text-center dark:text-white px-4">Saat Event Besar</td>
+          <td class="py-3 border text-center dark:text-white px-4">Sekbid 6</td>
+          <td class="py-3 border text-center dark:text-white px-2">✅</td>
+        </tr>
+        <tr>
+          <td class="py-3 border text-center dark:text-white px-4">Bersosialisasi Kewirausahaan</td>
+          <td class="py-3 border text-center dark:text-white px-4">1 kali 6 Bulan</td>
+          <td class="py-3 border text-center dark:text-white px-4">Sekbid 6</td>
           <td class="py-3 border text-center dark:text-white px-2">-</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Senam Sehat Jasmani</td>
-          <td class="py-3 border text-center dark:text-white px-4">1x Sebulan</td>
+          <td class="py-3 border text-center dark:text-white px-4">Senam</td>
+          <td class="py-3 border text-center dark:text-white px-4">2 kali Sebulan</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 7</td>
           <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Bunkasai</td>
-          <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
+          <td class="py-3 border text-center dark:text-white px-4">Bekal Sehat</td>
+          <td class="py-3 border text-center dark:text-white px-4">MPLS</td>
+          <td class="py-3 border text-center dark:text-white px-4">Sekbid 7</td>
+          <td class="py-3 border text-center dark:text-white px-2">-</td>
+        </tr>
+        <tr>
+          <td class="py-3 border text-center dark:text-white px-4">Donor Darah</td>
+          <td class="py-3 border text-center dark:text-white px-4">Agustus</td>
+          <td class="py-3 border text-center dark:text-white px-4">Sekbid 7</td>
+          <td class="py-3 border text-center dark:text-white px-2">-</td>
+        </tr>
+        <tr>
+          <td class="py-3 border text-center dark:text-white px-4">Melaksanakan Festival Akustik</td>
+          <td class="py-3 border text-center dark:text-white px-4">Classmeet</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 8</td>
-          <td class="py-3 border text-center dark:text-white px-2">-</td>
+          <td class="py-3 border text-center dark:text-white px-2">✅</td>
+        </tr>
+        <tr>
+          <td class="py-3 border text-center dark:text-white px-4">Membuat Poster Kartini</td>
+          <td class="py-3 border text-center dark:text-white px-4">21 April</td>
+          <td class="py-3 border text-center dark:text-white px-4">Sekbid 8</td>
+          <td class="py-3 border text-center dark:text-white px-2">✅</td>
+        </tr>
+        <tr>
+          <td class="py-3 border text-center dark:text-white px-4">Kelas Sastra</td>
+          <td class="py-3 border text-center dark:text-white px-4">April</td>
+          <td class="py-3 border text-center dark:text-white px-4">Sekbid 8</td>
+          <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <tr>
           <td class="py-3 border text-center dark:text-white px-4">Sehari Beradat Minang</td>
-          <td class="py-3 border text-center dark:text-white px-4">July</td>
+          <td class="py-3 border text-center dark:text-white px-4">MPLS</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 8</td>
           <td class="py-3 border text-center dark:text-white px-2">-</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Pensi Kelas 12</td>
-          <td class="py-3 border text-center dark:text-white px-4">11 November 2023</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 8</td>
-          <td class="py-3 border text-center dark:text-white px-2">✅</td>
-        </tr>
-        <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Membuat Website Mpk Osis</td>
-          <td class="py-3 border text-center dark:text-white px-4">Januari</td>
+          <td class="py-3 border text-center dark:text-white px-4">Meneruskan Akun Sosial Media Osis SMA Kartika</td>
+          <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 9</td>
           <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Membuat Kartika Tv</td>
-          <td class="py-3 border text-center dark:text-white px-4">November</td>
+          <td class="py-3 border text-center dark:text-white px-4">Melanjutkan Web Osis</td>
+          <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 9</td>
           <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Berkolaborasi Dengan Sekbid Lain Dalam Bidang TIK</td>
-          <td class="py-3 border text-center dark:text-white px-4">Fleksibel</td>
+          <td class="py-3 border text-center dark:text-white px-4">Kolaborasi dengan Dokumentasi</td>
+          <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 9</td>
           <td class="py-3 border text-center dark:text-white px-2">✅</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Mengadakan Lomba Story Telling</td>
-          <td class="py-3 border text-center dark:text-white px-4">Class    Meeting</td>
-          <td class="py-3 border text-center dark:text-white px-4">Sekbid 10</td>
+          <td class="py-3 border text-center dark:text-white px-4">Short Movie tentang Bahaya Penyalahgunaan Teknologi</td>
+          <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
+          <td class="py-3 border text-center dark:text-white px-4">Sekbid 9</td>
           <td class="py-3 border text-center dark:text-white px-2">-</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Poster Tentang Hari Besar Dalam Bahasa Inggris</td>
+          <td class="py-3 border text-center dark:text-white px-4">One Day No Gadget</td>
+          <td class="py-3 border text-center dark:text-white px-4">11 Agustus</td>
+          <td class="py-3 border text-center dark:text-white px-4">Sekbid 9</td>
+          <td class="py-3 border text-center dark:text-white px-2">-</td>
+        </tr>
+        <tr>
+          <td class="py-3 border text-center dark:text-white px-4">MC Berbahasa Inggris</td>
           <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 10</td>
-          <td class="py-3 border text-center dark:text-white px-2">✅</td>
+          <td class="py-3 border text-center dark:text-white px-2">-</td>
         </tr>
         <tr>
-          <td class="py-3 border text-center dark:text-white px-4">Protokol Berbahasa Inggris Saat Kultum</td>
-          <td class="py-3 border text-center dark:text-white px-4">Februari</td>
+          <td class="py-3 border text-center dark:text-white px-4">Lomba Solo Song Inggris</td>
+          <td class="py-3 border text-center dark:text-white px-4">September</td>
           <td class="py-3 border text-center dark:text-white px-4">Sekbid 10</td>
-          <td class="py-3 border text-center dark:text-white px-2">✅</td>
+          <td class="py-3 border text-center dark:text-white px-2">-</td>
+        </tr>
+        <tr>
+          <td class="py-3 border text-center dark:text-white px-4">Konten Promosi Sekolah Berbahasa Inggris</td>
+          <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
+          <td class="py-3 border text-center dark:text-white px-4">Sekbid 10</td>
+          <td class="py-3 border text-center dark:text-white px-2">-</td>
+        </tr>
+        <tr>
+          <td class="py-3 border text-center dark:text-white px-4">English Day MPK/OSIS</td>
+          <td class="py-3 border text-center dark:text-white px-4">Eksidentil</td>
+          <td class="py-3 border text-center dark:text-white px-4">Sekbid 10</td>
+          <td class="py-3 border text-center dark:text-white px-2">-</td>
         </tr>
         <!-- Tambahkan baris lain di sini -->
       </tbody>
