@@ -97,7 +97,7 @@ def konten_html(nama) :
                   <a href="../pengurus.html" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Pengurus Osis</a>
                 </li>
                 <li class="group">
-                  <a href="../gallery.html" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Gallery</a>
+                  <a href="../gallery.html" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Berita</a>
                 </li>
                 <li class="group">
                   <a href="../chatbot.html" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Chatbot</a>

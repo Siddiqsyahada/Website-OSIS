@@ -22,7 +22,7 @@ export function panggilGenerateBiodataDariNama(nama){
     "chayaraBalqisQanita" : ["chayara Balqis Qanita", "chayara", "XI.F6", "Bendahara OSIS 2", "pekanbaru/26 November 2007", "wanita karir", "chayarals"],
     "MozartMarchelloElshie" : ["Mozart Marchello Elshie", "Mozart", "XI.F9", "Humas", "Padang/15 Maret 2008", "Abdi Negara ", "mozartmarchello"],
     "SyifaSalsabilla" : ["Syifa Salsabilla", "Syifa ", "X.E2", "Dokumentasi 1", "Padang/06 Maret 2009", "Miliader", "Faassyiii_"],
-    "ArifaRasyidah" : ["Arifa Rasyidah", "Arifa", "X.E3", "Dokumentasi 2", "Sidikalang/28 November 2008", "Multidisciplinary Engineer", "rfha_rasydh "],
+    "ArifaRasyidah" : ["Arifa Rasyidah", "Arifa", "X.E3", "Dokumentasi 2", "Sidikalang/28 November 2008", "Multidisciplinary Engineer", "rfha_rasydh"],
     "SyifaHenivauline" : ["Syifa Henivauline", "Syifa ", "X.E9", "Sekbid 1", "Padang/23 April 2009", "POLWAN", "syifahenivauline"],
     "RizkiHeryundaAgilfi" : ["Rizki Heryunda Agilfi", "Rizki", "X.E3", "Sekbid 1", "-", "--", "--"],
     "RaffaZevio" : ["Raffa Zevio", "Raffa", "X.E1", "Sekbid 2", "Padang/15 Maret 2009", "Orang Sukses", "raffa_zvio"],
