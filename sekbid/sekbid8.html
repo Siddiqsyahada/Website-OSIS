@@ -93,13 +93,13 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Anggota 1 -->
                     <div class="bg-white rounded-lg shadow-lg p-4" data-aos="fade-up">
-                        <img src="../pengurusOsis/fotoPengurus/Yara.jpg" alt="Foto Anggota 1" class="w-full h-80 object-cover rounded-md mb-4">
-                        <p class="text-xl text-center font-semibold mb-2">Chayara Balqis Qanita</p>
+                        <img src="../dist/img/fotoPengurus/Salima Ramadani.jpg" alt="Foto Anggota 1" class="w-full h-80 object-cover rounded-md mb-4">
+                        <p class="text-xl text-center font-semibold mb-2">Salima Ramadani</p>
                     </div>
                     <!-- Anggota 2 -->
                     <div class="bg-white rounded-lg shadow-lg p-4" data-aos="fade-up">
-                        <img src="../pengurusOsis/fotoPengurus/Rere.jpg" alt="Foto Anggota 2" class="w-full h-80 object-cover rounded-md mb-4">
-                        <p class="text-xl text-center font-semibold mb-2">Desti Julia Revani</p>
+                        <img src="../dist/img/fotoPengurus/Thafza Antika Pratama.jpg" alt="Foto Anggota 2" class="w-full h-80 object-cover rounded-md mb-4">
+                        <p class="text-xl text-center font-semibold mb-2">Thafza Antika Pratama</p>
                     </div>
                 </div>
             </div>
@@ -120,18 +120,23 @@
                     <tbody>
                         <tr class="border-b">
                             <td class="px-4 py-2 text-center">1</td>
-                            <td class="px-4 py-2">Pentas Seni Kelas 12</td>
+                            <td class="px-4 py-2">Festival Akustik</td>
                             <td class="px-4 py-2">Terlaksana</td>
                         </tr>
                         <tr class="border-b bg-gray-50">
                             <td class="px-4 py-2 text-center">2</td>
-                            <td class="px-4 py-2">Bunkasai</td>
-                            <td class="px-4 py-2">Belum Terlaksana</td>
+                            <td class="px-4 py-2">Hari Kartini</td>
+                            <td class="px-4 py-2">Terlaksana</td>
+                        </tr>
+                        <tr class="border-b bg-gray-50">
+                            <td class="px-4 py-2 text-center">3</td>
+                            <td class="px-4 py-2">Sehari Beradat Minang</td>
+                            <td class="px-4 py-2">Terlaksana</td>
                         </tr>
                         <tr class="border-b bg-gray-50">
                             <td class="px-4 py-2 text-center">4</td>
-                            <td class="px-4 py-2">Sehari Beradat Minang</td>
-                            <td class="px-4 py-2">Belum Terlaksana</td>
+                            <td class="px-4 py-2">Kelas Sastra</td>
+                            <td class="px-4 py-2">Terlaksana</td>
                         </tr>
                     </tbody>
                 </table>  
@@ -144,7 +149,7 @@
 
     <!-- Footer -->
     <footer class="text-center text-xs font- bg-dark text-slate-500 py-4">
-        <p>&copy; Copyright © 2024 Osis Sma Kartika. All Rights Reserved.</p>
+        <p>&copy; Copyright © 2025 Osis Sma Kartika. All Rights Reserved.</p>
     </footer>
 
     <script src="../dist/js/sekbid.js"></script>
@@ -158,12 +163,38 @@
 
       createCarousel(
       "sekbid8",
-      'Pentas Seni Kelas 12',
+      'Festival Akustik',
       [
-          '../dist/img/docProker/sekbid8/proker1/Picture1.jpg',
-          '../dist/img/docProker/sekbid8/proker1/Picture2.jpg',
-          '../dist/img/docProker/sekbid8/proker1/Picture3.jpg',
-          '../dist/img/docProker/sekbid8/proker1/Picture4.jpg',
+          '../dist/img/docProker/sekbid8/proker1/Picture1.png',
+          '../dist/img/docProker/sekbid8/proker1/Picture2.png',
+          '../dist/img/docProker/sekbid8/proker1/Picture3.png',
+      ]
+    );
+      createCarousel(
+      "sekbid8",
+      'Hari Kartini',
+      [
+          '../dist/img/docProker/sekbid8/proker2/Picture1.png',
+          '../dist/img/docProker/sekbid8/proker2/Picture2.png',
+          '../dist/img/docProker/sekbid8/proker2/Picture1.png',
+      ]
+    );
+      createCarousel(
+      "sekbid8",
+      'Sehari Beradat Minang',
+      [
+          '../dist/img/docProker/sekbid8/proker3/Picture1.png',
+
+      ]
+    );
+      createCarousel(
+      "sekbid8",
+      'Kelas Sastra',
+      [
+          '../dist/img/docProker/sekbid8/proker4/Picture1.png',
+          '../dist/img/docProker/sekbid8/proker4/Picture2.png',
+          '../dist/img/docProker/sekbid8/proker4/Picture3.png',
+
       ]
     );
     </script>
@@ -174,7 +205,7 @@
                 dots: true,
                 infinite: true,
                 speed: 300,
-                slidesToShow: 1,
+                slidesToShow: 2,
                 autoplay: true,
                 autoplaySpeed: 3000,
                 lazyLoad: 'ondemand',

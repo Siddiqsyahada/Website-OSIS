@@ -5,7 +5,8 @@
 const dataPengurus = [
   { nama: "Rendy Budiman", panggilan: "Buren", kelas: "9", jabatan: "Pembina OSIS 1", instagram: "rendyburen" },
   { nama: "Fazzatul Husna", panggilan: "-", kelas: "-", jabatan: "Pembina OSIS 2", instagram: "-" },
-  { nama: "Yuniarti", panggilan: "-", kelas: "-", jabatan: "Pembina OSIS 3", instagram: "-" },
+  { nama: "Adenan Saputra Antoni", panggilan: "-", kelas: "-", jabatan: "Pembina OSIS 3", instagram: "-" },
+  { nama: "Pance Saputra", panggilan: "-", kelas: "-", jabatan: "Pembina OSIS 4", instagram: "-" },
   { nama: "Adriyansyah Nugraha", panggilan: "Adri", kelas: "XI.F1", jabatan: "Ketua MPK", instagram: "Adrynsnn" },
   { nama: "Vildo Degra", panggilan: "Vildo", kelas: "XI.F4", jabatan: "Wakil Ketua MPK", instagram: "Vdodga_" },
   { nama: "Naila Khalifah Azzahra", panggilan: "Naila", kelas: "XI.F5", jabatan: "Sekretaris MPK", instagram: "nnaiii.laa_" },
@@ -51,7 +52,7 @@ const dataPengurus = [
 
 // Fungsi untuk menampilkan kartu pengurus
 const kategoriPengurus = {
-  Pembina: ["Pembina OSIS 1", "Pembina OSIS 2", "Pembina OSIS 3"],
+  Pembina: ["Pembina OSIS 1", "Pembina OSIS 2", "Pembina OSIS 3", "Pembina OSIS 4"],
   Mpk: ["Ketua MPK", "Wakil Ketua MPK", "Sekretaris MPK", "Bendahara MPK", "Komisi A", "Komisi B", "Komisi C"],
   IntiOsis: ["Ketua OSIS", "Wakil Ketua OSIS 1", "Wakil Ketua OSIS 2", "Sekretaris OSIS 1", "Sekretaris OSIS 2", "Bendahara OSIS 1", "Bendahara OSIS 2", "Humas","Dokumentasi 1","Dokumentasi 2"],
   AnggotaOsis: ["Sekbid 1", "Sekbid 2", "Sekbid 3", "Sekbid 4", "Sekbid 5", "Sekbid 6", "Sekbid 7", "Sekbid 8", "Sekbid 9", "Sekbid 10"]

@@ -78,7 +78,7 @@
     <!-- Konten -->
     <div class="container mx-auto mt-8">
         <h1 class="py-14 text-2xl font-bold mb-4 text-center">Keimanan Dan Ketakwaan Terhadap Tuhan Yang Maha Esa</h1>
-        <section id="tentang"">
+        <section id="tentang">
             <div class="px-2 lg:px-0">
                 <h2 class="text-2xl font-bold mb-4">Tentang Sekbid 1</h2>
                 <p class="text-lg">
@@ -93,13 +93,13 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Anggota 1 -->
                     <div class="bg-white rounded-lg shadow-lg p-4" data-aos="fade-up">
-                        <img src="../pengurusOsis/fotoPengurus/nessha.jpg" alt="Foto Anggota 1" class="w-full h-80 object-cover rounded-md mb-4">
-                        <p class="text-xl text-center font-semibold mb-2">Nessha Adriani</p>
+                        <img src="../dist/img/fotoPengurus/Syifa Henivauline.jpg" alt="Foto Anggota 1" class="w-full h-80 object-cover rounded-md mb-4">
+                        <p class="text-xl text-center font-semibold mb-2">Syifa Henivauline</p>
                     </div>
                     <!-- Anggota 2 -->
                     <div class="bg-white rounded-lg shadow-lg p-4" data-aos="fade-up">
-                        <img src="../pengurusOsis/fotoPengurus/dea.jpg" alt="Foto Anggota 2" class="w-full h-80 object-cover rounded-md mb-4">
-                        <p class="text-xl text-center font-semibold mb-2">Dea Adelia</p>
+                        <img src="../dist/img/fotoPengurus/Rizki Heryunda Agilfi.jpg" alt="Foto Anggota 2" class="w-full h-80 object-cover rounded-md mb-4">
+                        <p class="text-xl text-center font-semibold mb-2">Rizky Heryunda Agilfi</p>
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@
                     <tbody>
                         <tr class="border-b">
                             <td class="px-4 py-2 text-center">1</td>
-                            <td class="px-4 py-2">Mengadakan Kultum Jumat</td>
+                            <td class="px-4 py-2">Merayakan Hari Besar Islam</td>
                             <td class="px-4 py-2">Terlaksana</td>
                         </tr>
                         <tr class="border-b bg-gray-50">
@@ -130,17 +130,17 @@
                         </tr>
                         <tr class="border-b">
                             <td class="px-4 py-2 text-center">3</td>
-                            <td class="px-4 py-2">Perayaan Hari Besar Islam</td>
+                            <td class="px-4 py-2">Mengadakan Kultum</td>
                             <td class="px-4 py-2">Terlaksana</td>
                         </tr>
                         <tr class="border-b bg-gray-50">
                             <td class="px-4 py-2 text-center">4</td>
-                            <td class="px-4 py-2">Lomba Bernuansa Islam</td>
-                            <td class="px-4 py-2">Belum Terlaksana</td>
+                            <td class="px-4 py-2">Bagi-bagi takjil</td>
+                            <td class="px-4 py-2">Terlaksana</td>
                         </tr>
                         <tr class="border-b bg-gray-50">
                             <td class="px-4 py-2 text-center">5</td>
-                            <td class="px-4 py-2">Berbagi Takjil</td>
+                            <td class="px-4 py-2">Open Donasi</td>
                             <td class="px-4 py-2">Terlaksana</td>
                         </tr>
                     </tbody>
@@ -154,7 +154,7 @@
 
     <!-- Footer -->
     <footer class="text-center text-xs font- bg-dark text-slate-500 py-4">
-        <p>&copy; Copyright © 2024 Osis Sma Kartika. All Rights Reserved.</p>
+        <p>&copy; Copyright © 2025 Osis Sma Kartika. All Rights Reserved.</p>
     </footer>
 
     <script src="../dist/js/sekbid.js"></script>
@@ -165,10 +165,11 @@
     <script>
       createCarousel(
         "sekbid1",
-        'Kultum Setiap Jumat',
+        'Merayakan Hari Besar Islam',
         [
             '../dist/img/docProker/sekbid1/proker1/Picture1.png',
             '../dist/img/docProker/sekbid1/proker1/Picture2.png',
+            '../dist/img/docProker/sekbid1/proker1/Picture3.png',
         ]
       );
       createCarousel(
@@ -182,22 +183,23 @@
       );
       createCarousel(
         "sekbid1",
-        'Perayaan Hari Besar Islam',
+        'Mengadakan Kultum',
         [
             '../dist/img/docProker/sekbid1/proker3/Picture1.png',
             '../dist/img/docProker/sekbid1/proker3/Picture2.png',
-            '../dist/img/docProker/sekbid1/proker3/Picture3.png',
+            '../dist/img/docProker/sekbid1/proker3/Picture1.png',
         ]
       );
       createCarousel(
         "sekbid1",
-        'Bagi-Bagi Takjil',
+        'Berbagi takjil',
         [
             '../dist/img/docProker/sekbid1/proker4/Picture1.png',
             '../dist/img/docProker/sekbid1/proker4/Picture2.png',
+            '../dist/img/docProker/sekbid1/proker4/Picture1.png',
         ]
       );
-
+      
         AOS.init({
           duration:1000
         });
@@ -206,7 +208,7 @@
                 dots: true,
                 infinite: true,
                 speed: 300,
-                slidesToShow: 1,
+                slidesToShow: 2,
                 autoplay: true,
                 autoplaySpeed: 3000,
                 lazyLoad: 'ondemand',

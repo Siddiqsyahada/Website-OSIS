@@ -93,13 +93,13 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Anggota 1 -->
                     <div class="bg-white rounded-lg shadow-lg p-4" data-aos="fade-up">
-                        <img src="../pengurusOsis/fotoPengurus/Sylla.jpg" alt="Foto Anggota 1" class="w-full h-80 object-cover rounded-md mb-4">
-                        <p class="text-xl text-center font-semibold mb-2">Khaisylla</p>
+                        <img src="../dist/img/fotoPengurus/Kartika Candra Kirana.jpg" alt="Foto Anggota 1" class="w-full h-80 object-cover rounded-md mb-4">
+                        <p class="text-xl text-center font-semibold mb-2">Kartika Candra Kirana</p>
                     </div>
                     <!-- Anggota 2 -->
                     <div class="bg-white rounded-lg shadow-lg p-4" data-aos="fade-up">
-                        <img src="../pengurusOsis/fotoPengurus/Naila.jpg" alt="Foto Anggota 2" class="w-full h-80 object-cover rounded-md mb-4">
-                        <p class="text-xl text-center font-semibold mb-2">Naila Khalifah Azzahra</p>
+                        <img src="../dist/img/fotoPengurus/Raffa Zevio.jpg" alt="Foto Anggota 2" class="w-full h-80 object-cover rounded-md mb-4">
+                        <p class="text-xl text-center font-semibold mb-2">Raffa Zevio</p>
                     </div>
                 </div>
             </div>
@@ -120,23 +120,18 @@
                     <tbody>
                         <tr class="border-b">
                             <td class="px-4 py-2 text-center">1</td>
-                            <td class="px-4 py-2">Bank Sampah</td>
-                            <td class="px-4 py-2">Belum Terlaksana</td>
+                            <td class="px-4 py-2">Melaksanakan Gotong Royong</td>
+                            <td class="px-4 py-2">Terlaksana</td>
                         </tr>
                         <tr class="border-b bg-gray-50">
                             <td class="px-4 py-2 text-center">2</td>
-                            <td class="px-4 py-2">Poster Kato Nan Ampek</td>
-                            <td class="px-4 py-2">Belum Terlaksana</td>
+                            <td class="px-4 py-2">Lomba Kebersihan Kelas</td>
+                            <td class="px-4 py-2">Terlaksana</td>
                         </tr>
                         <tr class="border-b">
                             <td class="px-4 py-2 text-center">3</td>
-                            <td class="px-4 py-2">Lomba Video Kreatif Sumbang 12</td>
-                            <td class="px-4 py-2">Belum Terlaksana</td>
-                        </tr>
-                        <tr class="border-b bg-gray-50">
-                            <td class="px-4 py-2 text-center">4</td>
-                            <td class="px-4 py-2">Pameran Seni Dari Barang Bekas</td>
-                            <td class="px-4 py-2">Belum Terlaksana</td>
+                            <td class="px-4 py-2">Bantuan Sosial</td>
+                            <td class="px-4 py-2">Terlaksana</td>
                         </tr>
                     </tbody>
                 </table>  
@@ -149,26 +144,53 @@
 
     <!-- Footer -->
     <footer class="text-center text-xs font- bg-dark text-slate-500 py-4">
-        <p>&copy; Copyright © 2024 Osis Sma Kartika. All Rights Reserved.</p>
+        <p>&copy; Copyright © 2025 Osis Sma Kartika. All Rights Reserved.</p>
     </footer>
 
     <script src="../dist/js/sekbid.js"></script>
     <script src="../dist/js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration:1000
-      });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
     <script>
+      createCarousel(
+        "sekbid2",
+        'Gotong Royong',
+        [
+            '../dist/img/docProker/sekbid2/proker1/Picture1.png',
+            '../dist/img/docProker/sekbid2/proker1/Picture2.png',
+            '../dist/img/docProker/sekbid2/proker1/Picture1.png',
+        ]
+      );
+      createCarousel(
+        "sekbid2",
+        'Lomba Kebersihan Kelas',
+        [
+            '../dist/img/docProker/sekbid2/proker2/Picture1.png',
+            '../dist/img/docProker/sekbid2/proker2/Picture2.png',
+            '../dist/img/docProker/sekbid2/proker2/Picture1.png',
+        ]
+      );
+      createCarousel(
+        "sekbid2",
+        'Bantuan Sosial',
+        [
+            '../dist/img/docProker/sekbid2/proker3/Picture2.png',
+            '../dist/img/docProker/sekbid2/proker3/Picture1.png',
+            '../dist/img/docProker/sekbid2/proker3/Picture2.png',
+        ]
+      );
+
+      
+        AOS.init({
+          duration:1000
+        });
         $(document).ready(function(){
             $('.slick-carousel').slick({
                 dots: true,
                 infinite: true,
                 speed: 300,
-                slidesToShow: 1,
+                slidesToShow: 2,
                 autoplay: true,
                 autoplaySpeed: 3000,
                 lazyLoad: 'ondemand',
