@@ -72,7 +72,7 @@ function tampilkanKartuPengurus(dataPengurus, jabatan) {
 
     cardDiv.innerHTML = `
       <div class="border-solid rounded-md justify-center border-4 border-primary">
-        <img class="w-[180px] h-40 flex justify-center rounded-md bg-cover" src="./dist/img/fotoPengurus/${pengurus.nama}.jpg" alt="Foto ${pengurus.nama}">
+        <img class="w-[180px] h-40 flex justify-center rounded-md bg-cover" src="../dist/img/fotoPengurus/${pengurus.nama}.jpg" alt="Foto ${pengurus.nama}">
       </div>
       <div class="w-full h-full">
         <div class="p-3 items-center flex-row">
